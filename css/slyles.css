@@ -1,4 +1,80 @@
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
+}
+
+.main-container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  max-width: 1600px;
+  justify-content: space-between;
+  margin: 55px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background: rgba(250, 251, 253, 0.44);
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__nav {
+  flex-grow: 1;
+}
+
+.top-header__input {
+  border: 4px solid #272525;
+  border-radius: 90px;
+  padding-left: 30px;
+  background: no-repeat left/5% url(../img/loupe-search.png);
+  background-position: 10px;
+  height: 60px;
+}
+
+.top-header__logo {
+  width: 488px;
+  height: 39px;
+}
+.menu__sale {
+  font-family: "Neutraface Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 38.0443px;
+  line-height: 38px;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+.top-header__phone-number {
+    background-color: #1FAB8A;
+    /* height: 60px; */
+    border-radius: 90px;
+}
+
+.top-header__number-link {
+    padding: 20.5px 62px;
+    display: flex;
 
 }
