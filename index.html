@@ -24,12 +24,10 @@
           <a class="top-header__number-link link" href="tel:+380 630 130 103">+380 630 130 103</a>
         </div>
         <div class="top-header__profile">
-          <button type="button">
-            <img src="./img/profile-icon.svg"
-          </button>
+          <button class="top-header__profile-butt" type="button"><img src="./img/profile-icon.svg"</button>
         </div>
         <div class="top-header__lang">
-          <button type="button">RU</button>/<button type="button">EN</button>
+          <button class="top-header__ru" type="button">ru</button> / <button class="top-header__en" type="button">en</button>
         </div>
       </div>
       <div class="menu">
@@ -38,16 +36,22 @@
             <li>
               <a class="menu__link link" href="/sets">Наборы</a>
             </li>
-            <li>
-              <a class="menu__link link" href="/all-goods">Все товары</a>
-            </li>
+            <div class="menu__active">
+              <li>
+                <a class="menu__link menu__link_active link" href="/all-goods">Все товары</a>
+                <div class="menu__decor"></div>
+              </li>
+            </div>
             <li>
               <a class="menu__link link" href="/information">Информация</a>
             </li>
           </ul>
         </nav>
-        <a class="menu__sale" href="/">Шопперы со скидкой - 25%</a>
-        <img src="./img/menu-img.svg"
+        <div class="menu__sale-background">
+          <div class="menu__shadows">
+            <a class="menu__sale" href="/">Шопперы со скидкой - 25%</a>
+          </div>
+        </div>
       </div>
     </header>
   </body>
