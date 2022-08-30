@@ -17,17 +17,15 @@
             <img src="./img/gifts-and-merch-logo.svg" alt="GIFTS & MERCH" />
           </a>
         </div>
-        <div class="top-header__search">
           <input class="top-header__input" type="search" placeholder="Поиск" />
-        </div>
-        <div class="top-header__phone-number">
           <a class="top-header__number-link link" href="tel:+380 630 130 103">+380 630 130 103</a>
-        </div>
         <div class="top-header__profile">
           <button class="top-header__profile-butt" type="button"><img src="./img/profile-icon.svg"</button>
         </div>
         <div class="top-header__lang">
-          <button class="top-header__ru" type="button">ru</button> / <button class="top-header__en" type="button">en</button>
+          <button class="top-header__butt top-header__butt_active" type="button">ru</button>
+          /
+          <button class="top-header__butt" type="button">en</button>
         </div>
       </div>
       <div class="menu">
@@ -36,13 +34,10 @@
             <li>
               <a class="menu__link link" href="/sets">Наборы</a>
             </li>
-            <div class="menu__active">
               <li>
                 <a class="menu__link menu__link_active link" href="/all-goods">Все товары</a>
-                <div class="menu__decor"></div>
               </li>
-            </div>
-            <li>
+            <li class="rel">
               <a class="menu__link link" href="/information">Информация</a>
             </li>
           </ul>
