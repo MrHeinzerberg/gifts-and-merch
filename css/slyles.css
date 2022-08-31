@@ -12,15 +12,13 @@ body {
   display: flex;
   align-items: center;
   height: 60px;
-  /* max-width: 1600px; */
-  justify-content: space-around;
-  margin: 41px 0px 45px 0px;
+  max-width: 1600px;
+  /* justify-content: space-around; */
+  margin: 41px auto 45px auto;
 }
 
 .menu__sale-background {
   background: no-repeat right url(../img/menu-img.svg);
-  height: 100px;
-  width: 805px;
 }
 
 .menu {
@@ -58,7 +56,7 @@ body {
   height: 60px;
   width: 490px;
   display: block;
-  /* margin: 0px 34px 0px 32px; */
+  margin: 0px 34px 0px 32px;
 }
 
 input::-ms-reveal {
@@ -68,7 +66,7 @@ input::-ms-reveal {
 .top-header__logo {
   width: 488px;
   height: 39px;
-  /* margin-right: 32px; */
+  margin-right: 32px;
 }
 .menu__sale {
   font-family: "Gilroy";
@@ -104,11 +102,14 @@ button {
   color: #eef1f6;
   border-radius: 90px;
   background-color: #1fab8a;
+  box-shadow: 0px 6px 25px rgba(121, 129, 173, 0.45);
 }
 
 .top-header__profile-butt {
   cursor: pointer;
-  /* margin: 0px 21px 0px 36px; */
+  width: 33px;
+  height: 33px;
+  margin: 0px 21px 0px 36px;
 }
 
 .top-header__butt {
@@ -122,10 +123,18 @@ button {
   cursor: pointer;
 }
 
+.top-header__lang {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 105.5%;
+  margin-left: 21px;
+}
+
 .top-header__butt_active {
   font-weight: 600;
   color: #272525;
-  /* margin-left: 21px; */
 }
 
 .menu__link {
@@ -146,16 +155,86 @@ button {
   background: #272525;
   box-shadow: 0px 16.0566px 20.0707px -4.01414px rgba(26, 32, 44, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
   color: #fafbfd;
+  position: relative;
+  font-weight: 800;
 }
 
-.rel {
-  display: flex;
-}
-
-/* .menu__decor {
+.menu__link_active::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 0px;
   height: 8px;
   width: 180px;
   background: #272525;
   border-radius: 6px;
-  margin-top: 10px;
-} */
+}
+
+@media (max-width: 1550px) {
+  .top-header {
+    max-width: 960px;
+    height: 36px;
+    margin: 27px auto 40px auto;
+  }
+
+  .top-header__logo {
+    width: 293px;
+    height: 24px;
+    margin-right: 20px;
+  }
+
+  .top-header__input {
+    width: 295px;
+    height: 37px;
+    border: 2px solid #272525;
+    border-radius: 54px;
+    background-position: 20px;
+    padding-left: 40px;
+    margin: 0px 14px 0px 20px;
+  }
+
+  .top-header__number-link {
+    padding: 11px 37px;
+    font-size: 14px;
+    box-shadow: 0px 3.60889px 15.037px rgba(121, 129, 173, 0.45);
+    border-radius: 54.1333px;
+    margin: 0px 15px 0px 14px;
+  }
+
+  .top-header__profile-butt {
+    width: 20px;
+    height: 20px;
+    margin: 0px 11px 0px 15px;
+  }
+  .top-header__butt {
+    font-size: 12px;
+  }
+
+  .top-header__lang {
+    font-size: 12px;
+    margin-left: 11px;
+  }
+  .menu__nav {
+    margin-left: 0px;
+  }
+
+  .menu__link {
+    padding: 40px 20px;
+    width: 100px;
+  }
+
+  .menu__link_active::after {
+    width: 140px;
+  }
+
+  .menu__sale {
+    width: 195px;
+    height: 48px;
+    font-size: 24px;
+    line-height: 24px;
+    padding-right: 71px;
+  }
+  .menu__sale-background {
+    background-position: -25px;
+  }
+}
