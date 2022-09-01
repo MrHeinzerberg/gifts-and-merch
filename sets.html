@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gifts and Merch</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/slyles.css" />
+  </head>
+  <body>
+    <header class="main-container page-header">
+      <div class="top-header">
+        <a href="/">
+          <img class="top-header__logo" src="./img/gifts-and-merch-logo.svg" alt="GIFTS & MERCH" />
+        </a>
+        <button class="top-header__search-butt show-mobile" type="button">
+        </button>
+        <input class="top-header__input hide-mobile" type="search" placeholder="Поиск" />
+        <a class="top-header__number-link hide-number link" href="tel:+380 630 130 103">+380 630 130 103</a>
+        <button class="top-header__menu-btn show-mobile" type="button" aria-label="Открыть мобильное мкню"></button>
+        <div class="top-header__profile hide-mobile">
+          <button type="button">
+            <img class="top-header__profile-butt" src="./img/profile-icon.svg" />
+          </button>
+        </div>
+        <div class="top-header__lang hide-mobile">
+          <button class="top-header__butt top-header__butt_active" type="button">ru</button>
+          /
+          <button class="top-header__butt" type="button">en</button>
+        </div>
+      </div>
+      <div class="menu hide-mobile">
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li>
+              <a class="menu__link link" href="/sets">Наборы</a>
+            </li>
+            <li>
+              <a class="menu__link menu__link_active link" href="/all-goods">Все товары</a>
+            </li>
+            <li class="rel">
+              <a class="menu__link link" href="/information">Информация</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu__sale-background">
+          <div class="menu__shadows">
+            <a class="menu__sale" href="/">Шопперы со скидкой - 25%</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
