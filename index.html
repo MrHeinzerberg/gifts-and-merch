@@ -15,20 +15,23 @@
         <a href="/">
           <img class="top-header__logo" src="./img/gifts-and-merch-logo.svg" alt="GIFTS & MERCH" />
         </a>
-        <input class="top-header__input" type="search" placeholder="Поиск" />
-        <a class="top-header__number-link link" href="tel:+380 630 130 103">+380 630 130 103</a>
-        <div class="top-header__profile">
+        <button class="top-header__search-butt show-mobile" type="button">
+        </button>
+        <input class="top-header__input hide-mobile" type="search" placeholder="Поиск" />
+        <a class="top-header__number-link hide-number link" href="tel:+380 630 130 103">+380 630 130 103</a>
+        <button class="top-header__menu-btn show-mobile" type="button" aria-label="Открыть мобильное мкню"></button>
+        <div class="top-header__profile hide-mobile">
           <button type="button">
             <img class="top-header__profile-butt" src="./img/profile-icon.svg" />
           </button>
         </div>
-        <div class="top-header__lang">
+        <div class="top-header__lang hide-mobile">
           <button class="top-header__butt top-header__butt_active" type="button">ru</button>
           /
           <button class="top-header__butt" type="button">en</button>
         </div>
       </div>
-      <div class="menu">
+      <div class="menu hide-mobile">
         <nav class="menu__nav">
           <ul class="menu__list">
             <li>

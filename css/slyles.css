@@ -69,7 +69,7 @@ input::-ms-reveal {
   margin-right: 32px;
 }
 .menu__sale {
-  font-family: "Gilroy";
+  font-family: "Neutraface Display";
   font-style: normal;
   font-weight: 900;
   font-size: 38.0443px;
@@ -99,6 +99,7 @@ button {
   font-weight: 600;
   font-size: 18px;
   line-height: 105.5%;
+  text-align: center;
   color: #eef1f6;
   border-radius: 90px;
   background-color: #1fab8a;
@@ -215,7 +216,7 @@ button {
     margin-left: 11px;
   }
   .menu__nav {
-    margin-left: 0px;
+    margin-left: 20px;
   }
 
   .menu__link {
@@ -237,4 +238,96 @@ button {
   .menu__sale-background {
     background-position: -25px;
   }
+}
+@media (min-width: 961px) {
+  .show-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .top-header {
+    height: 80px;
+    margin: 0px;
+    background: rgba(250, 251, 253, 0.44);
+  }
+
+  .top-header__logo {
+    width: 229px;
+    height: 18px;
+    margin: auto;
+    margin: 29px 100px 32px 20px;
+    left: 20px;
+  }
+  .top-header__search-butt {
+    width: 21px;
+    height: 21px;
+    padding: 0px;
+    background: transparent url(../img/search-butt-mobile.svg) no-repeat center;
+    border: 0px;
+    margin: auto;
+    cursor: pointer;
+    /* margin: 28px 30px 31px 63px; */
+  }
+
+  .top-header__number-link {
+    margin: auto;
+    /* margin: 20px 30px 24px 30px; */
+  }
+
+  .top-header__menu-btn {
+    width: 28px;
+    height: 17px;
+    padding: 0px;
+    background: transparent url(../img/menu-btn.svg) no-repeat center;
+    border: 0px;
+    margin: auto;
+    cursor:pointer;
+    /* margin: 29px 39px 33px 30px; */
+  }
+}
+
+@media (max-width: 600px) {
+  .hide-number {
+    display: none;
+  }
+
+  .top-header__logo {
+    width: 210px;
+    height: 17px;
+    margin: 35px 72px 28px 20px;
+}
+
+.top-header__search-butt {
+  margin-left: 72px;
+}
+}
+@media (max-width: 480px) {
+.top-header {
+  height: 50px;
+}
+
+.top-header__logo {
+  width: 130px;
+  height: 10px;
+  margin: 22px 43px 18px 20px;
+}
+
+.top-header__search-butt {
+  width: 16px;
+  height: 16px;
+  margin: 19px 25px 15px 43px;
+  background-size: 16px 16px;
+}
+
+.top-header__menu-btn {
+  width: 20px;
+  height: 12px;
+  background-size: 20px 12px;
+  margin-right: 23px;
+}
 }
