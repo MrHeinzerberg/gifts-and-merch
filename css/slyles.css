@@ -59,7 +59,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: 500;
   font-size: 16px;
   line-height: 105.5%;
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 .top-header__input:focus {
   background-image: url(../img/search-butt-mobile.svg);
@@ -97,8 +97,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .top-header__profile-img {
-  width: 33px;
-  height: 33px;
   margin: auto;
 }
 
@@ -111,6 +109,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: 400;
   font-size: 18px;
   line-height: 105.5%;
+  color: #272525;
 }
 
 .lang__btn {
@@ -200,7 +199,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   height: 100%;
-  padding-right: 300px;
+  padding-right: 120px;
   font-family: "Neutraface Display";
   font-style: normal;
   font-weight: 900;
@@ -375,4 +374,31 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 12px;
     background-size: 20px 12px;
   }
+}
+
+.burger-menu {
+  margin: auto;
+  max-width: 280px;
+  height: 540px;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.burger-menu__top {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  height: 20px;
+  margin: auto;
+}
+
+.top-lang {
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 0px;
+}
+
+.top-cancel {
+  display: block;
+
 }
