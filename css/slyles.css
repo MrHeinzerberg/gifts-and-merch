@@ -24,7 +24,6 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1600px;
   height: 60px;
   padding-top: 41px;
   padding-bottom: 45px;
@@ -393,4 +392,53 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .top-cancel {
   display: block;
+}
+
+.burger-menu__link {
+  padding: 7px 14px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.burger-menu__link--active {
+  font-weight: 700;
+}
+
+.burger-menu__link--active::after {
+  display: none;
+}
+
+.burger-menu__list,
+.burger-menu__goods {
+  columns: 2;
+}
+
+.contacts__email {
+  display: block;
+  margin-top: 21px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #454747;
+}
+
+.contacts__number-link {
+  margin: 12.5px 48px 6px 48px;
+  padding: 10.55px 37.3px;
+  font-size: 14px;
+  border-radius: 54px;
+}
+
+.contacts__networks {
+  display: flex;
+  justify-content: space-around;
+  margin: 6px 92px;
+}
+
+.social-media {
+
 }

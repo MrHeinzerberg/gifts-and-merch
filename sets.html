@@ -17,7 +17,7 @@
         </a>
         <button class="top-header__search-btn btn show-mobile" type="button"></button>
         <input class="top-header__input hide-mobile" type="search" placeholder="Поиск" />
-        <a class="top-header__number-link hide-number" href="tel:+380630130103">+380 630 130 103</a>
+        <a class="top-header__number-link" href="tel:+380630130103">+380 630 130 103</a>
         <button class="top-header__profile-btn btn hide-mobile" type="button">
           <img class="top-header__profile-img" src="./img/profile-icon.svg" width="33" height="33" alt="profile" />
         </button>
@@ -26,7 +26,7 @@
           /
           <button class="lang__btn btn" type="button">Eng</button>
         </div>
-        <button class="top-header__menu-btn btn show-mobile" type="button" aria-label="Открыть мобильное мкню"></button>
+        <button class="top-header__menu-btn btn show-mobile" type="button" saria-label="Открыть мобильное мкню"></button>
       </div>
       <div class="menu hide-mobile">
         <div class="menu__container main-container">
@@ -52,84 +52,86 @@
         </div>
       </div>
 
-      <!-- <div class="burger-menu">
+      <div class="burger-menu">
         <div class="burger-menu__top top">
-        <div class="lang top-lang">
-          <button class="lang__btn lang__btn--active btn" type="button">Ru</button>
-          /
-          <button class="lang__btn btn" type="button">Eng</button>
-        </div>
+          <div class="lang top-lang">
+            <button class="lang__btn lang__btn--active btn" type="button">Ru</button>
+            /
+            <button class="lang__btn btn" type="button">Eng</button>
+          </div>
           <button class="top-header__profile-btn btn" type="button">
-          <img class="top-header__profile-img" src="./img/profile-icon.svg" width="20" height="20" alt="profile" />
+            <img class="top-header__profile-img" src="./img/profile-icon.svg" width="20" height="20" alt="profile" />
           </button>
           <button class="top-cancel btn" type="button">
-          <img src="./img/burger-menu_cancel.svg" width="20" height="20" alt="x" >
+            <img src="./img/burger-menu_cancel.svg" width="20" height="20" alt="x" />
           </button>
         </div>
         <div>
-          <ul class="menu__list">
+          <ul class="menu__list burger-menu-list">
             <li>
-              <a class="menu__link" href="/sets">Наборы</a>
+              <a class="burger-menu__link menu__link" href="/sets">Наборы</a>
             </li>
             <li>
-              <a class="menu__link menu__link--active" href="/all-goods">Все товары</a>
+              <a class="burger-menu__link burger-menu__link--active menu__link menu__link--active" href="/all-goods">Все товары</a>
             </li>
-          <li>
-            <ul class="menu__list">
-              <li>
-                <a href="/hoodies">Толстовки</a>
-              </li>
-              <li>
-                <a href="/sweatshirts">Свитшоты</a>
-              </li>
-              <li>
-                <a href="/t-shirts">Футболки</a>
-              </li>
-              <li>
-                <a href="/polo">Поло</a>
-              </li>
-              <li>
-                <a href="/vests">Жилетки</a>
-              </li>
-              <li>
-                <a href="/backpacks">Рюкзаки</a>
-              </li>
-              <li>
-                <a href="/waist-bags">Бананки</a>
-              </li>
-              <li>
-                <a href="/eco-bags_shoppers">Эко-сумки/Шопперы</a>
-              </li>
-              <li>
-                <a href="/plaid">Пледы</a>
-              </li>
-              <li>
-                <a href="/socks">Носки</a>
-              </li>
-              <li>
-                <a href="/masks">Маски</a>
-              </li>
-            </ul>
-          </li>
+            <li>
+              <ul class="menu__list burger-menu__goods">
+                <li>
+                  <a href="/hoodies">Толстовки</a>
+                </li>
+                <li>
+                  <a href="/sweatshirts">Свитшоты</a>
+                </li>
+                <li>
+                  <a href="/t-shirts">Футболки</a>
+                </li>
+                <li>
+                  <a href="/polo">Поло</a>
+                </li>
+                <li>
+                  <a href="/vests">Жилетки</a>
+                </li>
+                <li>
+                  <a href="/backpacks">Рюкзаки</a>
+                </li>
+                <li>
+                  <a href="/waist-bags">Бананки</a>
+                </li>
+                <li>
+                  <a href="/eco-bags_shoppers">Эко-сумки/Шопперы</a>
+                </li>
+                <li>
+                  <a href="/plaid">Пледы</a>
+                </li>
+                <li>
+                  <a href="/socks">Носки</a>
+                </li>
+                <li>
+                  <a href="/masks">Маски</a>
+                </li>
+              </ul>
+            </li>
             <li>
               <a class="menu__link" href="/information">Информация</a>
             </li>
           </ul>
         </div>
         <div class="contacts">
-          <button class="btn" type="button">example@gmail.com</button>
-          <a class="top-header__number-link hide-number" href="tel:+380630130103">+380 630 130 103</a>
-          <a href="facebook.com">
-            <img src="./img/Facebook.svg" alt="Instagram">
-          </a>
-          <a href="instagram.com">
-            <img src="./img/Instagram.svg" alt="Instagram">
-          </a>
-          <a href="linkedin.com">
-            <img src="./img/LinkedIn.svg" alt="Instagram">
-          </a>
+          <a class="link contacts__email" type="button">example@gmail.com</a>
+          <a class="top-header__number-link hide-number contacts__number-link" href="tel:+380630130103">+380 630 130 103</a>
+          <div class="contacts__networks">
+            <a class="social-media" href="facebook.com">
+              <img src="./img/Facebook.svg" alt="Facebook" />
+            </a>
+            <a class="social-media" href="instagram.com">
+              <img src="./img/Instagram.svg" alt="Instagram" />
+            </a>
+            <a class="social-media" href="linkedin.com">
+              <img src="./img/LinkedIn.svg" alt="LinkedIn" />
+            </a>
+          </div>
         </div>
-      </div> -->
+      </div>
     </header>
   </body>
 </html>
