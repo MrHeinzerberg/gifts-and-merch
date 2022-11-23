@@ -89,13 +89,15 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: #156b57;
 }
 
-.top-header__profile-btn {
+.top-header__profile-btn,
+.burger-menu__profile-btn {
   display: flex;
   width: 60px;
   height: 60px;
 }
 
-.top-header__profile-img {
+.top-header__profile-img,
+.burger-menu__profile-img {
   margin: auto;
 }
 
@@ -414,7 +416,7 @@ input[type="search"]::-webkit-search-results-decoration {
   cursor: default;
 }
 
-.top-cancel {
+.burger-menu__close-btn {
   position: absolute;
   right: 0px;
   display: block;
@@ -467,7 +469,7 @@ input[type="search"]::-webkit-search-results-decoration {
   text-align: left;
 }
 
-.burger-menu__sublist {
+.burger-menu__sublink {
   display: inline-block;
   margin: 7px 0 8px;
   font-family: "Gilroy", sans-serif;
@@ -479,7 +481,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #8E8E8E;
 }
 
-.burger-menu__sublist--active {
+.burger-menu__sublink--active {
   font-weight: 700;
   color: #272525;
 }
@@ -491,7 +493,7 @@ text-align: center;
 
 .contacts__email {
   display: block;
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
