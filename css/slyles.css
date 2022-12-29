@@ -196,6 +196,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background: #272525;
   border-radius: 6px;
   pointer-events: none;
+  z-index: 1;
 }
 
 .menu__sale {
@@ -230,9 +231,81 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 100%;
 }
 
-.top-content {
+.page-top-content {
+  position: relative;
   height: 605px;
   background: linear-gradient(38.95deg, #9796f0 -10.38%, #fbc7d4 107.56%)
+}
+
+.top-content {
+  display: flex;
+  padding-top: 48px;
+}
+
+.top-content__create-or-choose-a-box {
+  max-width: 600px;
+}
+
+.top-content__main-or-sets,
+.main-or-sets__btn {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 400;
+  color: #7981AD;
+}
+
+.main-or-sets__btn--active,
+.top-content__main-or-sets {
+  color: #524983;
+}
+
+.top-content__title {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #272525;
+}
+
+.top-content__text {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 400;
+  color: #454747;
+}
+
+.top-content__write-to-the-manager {
+  padding: 18px 39px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 140%;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #3C336C;
+  border-radius: 60px;
+}
+
+.top-content__create-a-box {
+  margin-left: 45px;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 140%;
+  font-weight: 500;
+  color: #524983;
+}
+
+.top-content__two-boxes {
+  position: absolute;
+  right: 20px;
+  top: -57px;
 }
 
 @media (max-width: 1500px) {
