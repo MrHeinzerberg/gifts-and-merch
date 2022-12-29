@@ -1,5 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
+}
+
+.foo {
+  /* width: 25%; */
+  /* width: calc(25% - 30px); */
+  width: calc(25% - 23px);
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -14,7 +24,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .main-container {
-  max-width: 1600px;
+  max-width: 1664px;
   margin: 0 auto;
   padding: 0 32px;
 }
@@ -23,7 +33,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 146px;
   padding-top: 41px;
   padding-bottom: 45px;
 }
@@ -42,7 +52,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .top-header__input {
   display: block;
-  width: 490px;
+  width: 491px;
   height: 60px;
   padding-left: 70px;
   border: 4px solid #272525;
@@ -156,7 +166,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .menu__link {
   display: flex;
-  height: 20px;
+  height: 100%;
   padding: 40px;
   font-family: "Gilroy", sans-serif;
   font-style: normal;
@@ -227,7 +237,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 @media (max-width: 1500px) {
   .top-header {
-    height: 36px;
+    height: 103px;
     padding-top: 27px;
     padding-bottom: 40px;
   }
@@ -251,6 +261,8 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .top-header__number-link {
+    width: 185px;
+    height: 36px;
     padding: 11px 37px;
     font-size: 14px;
     box-shadow: 0 3.61px 15.04px rgba(121, 129, 173, 0.45);
@@ -272,12 +284,12 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .menu__link {
-    width: 100px;
+    width: 140px;
     padding: 40px 20px;
   }
 
   .menu__sale-link {
-    width: 195px;
+    width: 340px;
     height: 100%;
     padding-right: 150px;
     font-size: 24px;
@@ -285,13 +297,17 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 }
 @media (min-width: 1000px) {
-  .show-mobile {
+  .top-header__menu-btn,
+  .top-header__search-btn {
     display: none;
   }
 }
 
 @media (max-width: 999px) {
-  .hide-mobile {
+  .menu,
+  .top-header__input,
+  .top-header__profile-btn,
+  .lang {
     display: none;
   }
 
@@ -314,7 +330,7 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 21px;
     margin: 0 0 0 auto;
     padding: 0;
-    background: transparent url(../img/search-btnmobile.svg) no-repeat center;
+    background: transparent url(../img/search-btn-mobile.svg) no-repeat center;
     border: 0;
     cursor: pointer;
   }
