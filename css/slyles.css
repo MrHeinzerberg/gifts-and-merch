@@ -262,6 +262,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .top-content__title {
+  margin: 20px 0 20px 0;
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-size: 48px;
@@ -272,6 +273,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .top-content__text {
+  margin: 0 0 42px 0;
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -307,6 +309,12 @@ input[type="search"]::-webkit-search-results-decoration {
   right: 20px;
   top: -57px;
 }
+
+@media (min-width: 1501px) {
+    .top-content__two-boxes_1000 {
+      display: none;
+    }
+  }
 
 @media (max-width: 1500px) {
   .top-header {
@@ -368,10 +376,53 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 24px;
     line-height: 24px;
   }
+
+  .top-content {
+    padding: 68px 20px 0 20px;
+  }
+
+  .top-content__create-or-choose-a-box {
+    max-width: 500px;
+  }
+
+  .top-content__main-or-sets {
+    display: none;
+  }
+
+  .top-content__title {
+    margin: 0;
+  }
+
+  .top-content__text {
+    margin: 20px 0 34px 0;
+    font-size: 16px;
+    color: #272525;
+  }
+
+  .top-content__write-to-the-manager {
+    padding: 19px 42px;
+    font-family: "Gilroy", sans-serif;
+    font-size: 16px;
+  }
+
+  .top-content__create-a-box {
+    margin-left: 21px;
+  }
+
+  .top-content__two-boxes_1000 {
+    position: absolute;
+    top: 145px;
+    right: 0px;
+  }
+
+  .top-content__two-boxes {
+    display: none;
+  }
 }
 @media (min-width: 1000px) {
   .top-header__menu-btn,
-  .top-header__search-btn {
+  .top-header__search-btn,
+  .top-content__two-boxes_786 {
     display: none;
   }
 }
@@ -380,7 +431,8 @@ input[type="search"]::-webkit-search-results-decoration {
   .menu,
   .top-header__input,
   .top-header__profile-btn,
-  .lang {
+  .lang,
+  .top-content__two-boxes_1000 {
     display: none;
   }
 
@@ -421,6 +473,35 @@ input[type="search"]::-webkit-search-results-decoration {
     border: 0;
     cursor: pointer;
   }
+
+  .page-top-content {
+    height: 497px;
+  }
+
+  .top-content {
+    padding-top: 48px;
+  }
+
+  .top-content__create-or-choose-a-box {
+    max-width: 470px;
+  }
+
+  .top-content__title {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.04em;
+  }
+
+  .top-content__text {
+    max-width: 350px;
+    margin: 20px 0 38px 0;
+}
+
+.top-content__two-boxes_786 {
+  position: absolute;
+  top: -8px;
+  right: 0;
+}
 }
 
 @media (max-width: 650px) {
