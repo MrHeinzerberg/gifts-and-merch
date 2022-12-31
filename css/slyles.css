@@ -234,7 +234,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .page-top-content {
   position: relative;
   height: 605px;
-  background: linear-gradient(38.95deg, #9796f0 -10.38%, #fbc7d4 107.56%)
+  background: linear-gradient(38.95deg, #9796f0 -10.38%, #fbc7d4 107.56%);
+  z-index: -2;
 }
 
 .top-content {
@@ -504,8 +505,15 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 }
 
+@media (min-width: 651px) {
+  .top-content__two-boxes_480 {
+    display: none;
+  }
+}
+
 @media (max-width: 650px) {
-  .top-header__number-link {
+  .top-header__number-link,
+  .top-content__two-boxes_786 {
     display: none;
   }
 
@@ -516,6 +524,42 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .top-header__search-btn {
     margin-right: 30px;
+  }
+
+  .page-top-content {
+    height: 446px;
+  }
+
+  .top-content {
+    padding: 35px 19px 0 19px;
+  }
+
+  .top-content__text {
+    max-width: 256px;
+    margin-bottom: 31px;
+  }
+
+  .top-content__write-to-the-manager {
+    padding: 16px 34px;
+    font-size: 14px;
+  }
+
+  .top-content__create-a-box {
+    display: block;
+    margin: 7px 0 0 56px;
+    font-size: 14px;
+  }
+
+  .top-content__two-boxes_480 {
+    position: absolute;
+    top: 101px;
+    right: 0;
+  }
+}
+
+@media (min-width: 451px) {
+  .top-content__two-boxes_320 {
+    display: none;
   }
 }
 
@@ -540,6 +584,46 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 20px;
     height: 12px;
     background-size: 20px 12px;
+  }
+
+  .page-top-content {
+    height: 631px;
+  }
+
+  .top-content {
+    padding-top: 33px;
+  }
+
+  .top-content__title {
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .top-content__text {
+    max-width: 281px;
+    margin: 14px 0 0 0;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .top-content__write-to-the-manager {
+    margin: 345px 0 0 36px;
+  }
+
+  .top-content__create-a-box {
+    margin-left: 91px;
+  }
+
+  .top-content__two-boxes_480 {
+    display: none;
+  }
+
+  .top-content__two-boxes_320 {
+    position: absolute;
+    top: 188px;
+    right: 0;
+    z-index: -1;
   }
 }
 
