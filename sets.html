@@ -147,12 +147,20 @@
           <button class="btn top-content__write-to-the-manager" type="button">Написать менеджеру</button>
           <button class="btn top-content__create-a-box" type="button">Создать свой</button>
         </div>
-        <img class="top-content__two-boxes" src="./img/Two boxes.png" alt="Two boxes" />
+        <!-- <img class="top-content__two-boxes" src="./img/Two boxes.png" alt="Two boxes" />
         <img class="top-content__two-boxes_1000" src="./img/Two boxes1000.png" alt="Two boxes" />
         <img class="top-content__two-boxes_786" src="./img/Two boxes786.png" alt="Two boxes" />
         <img class="top-content__two-boxes_480" src="./img/Two boxes480.png" alt="Two boxes" />
-        <img class="top-content__two-boxes_320" src="./img/Two boxes320.png" alt="Two boxes" />
+        <img class="top-content__two-boxes_320" src="./img/Two boxes320.png" alt="Two boxes" /> -->
       </div>
+      <picture>
+        <source srcset="./img/Two-boxes.png" type="image/png" media="(min-width:1501px)"/>
+        <source srcset="./img/Two-boxes1000.png" type="image/png" media="(min-width:1000px)"/>
+        <source srcset="./img/Two-boxes786.png" type="image/png" media="(min-width:651px)"/>
+        <source srcset="./img/Two-boxes480.png" type="image/png" media="(min-width:451px)"/>
+        <source srcset="./img/Two-boxes320.png" type="image/png" media="(max-width:450px)"/>
+        <img class="top-content__main-img" src="./img/Two-boxes.png" alt="Two boxes"/>
+      </picture>
     </div>
 </div>
 </body>

@@ -111,8 +111,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: auto;
 }
 
-.lang
-.lang__btn {
+.lang .lang__btn {
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -254,7 +253,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-size: 14px;
   line-height: 130%;
   font-weight: 400;
-  color: #7981AD;
+  color: #7981ad;
 }
 
 .main-or-sets__btn--active,
@@ -291,7 +290,7 @@ input[type="search"]::-webkit-search-results-decoration {
   line-height: 140%;
   font-weight: 500;
   color: #ffffff;
-  background-color: #3C336C;
+  background-color: #3c336c;
   border-radius: 60px;
 }
 
@@ -305,17 +304,11 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #524983;
 }
 
-.top-content__two-boxes {
+.top-content__main-img {
   position: absolute;
   right: 20px;
   top: -57px;
 }
-
-@media (min-width: 1501px) {
-    .top-content__two-boxes_1000 {
-      display: none;
-    }
-  }
 
 @media (max-width: 1500px) {
   .top-header {
@@ -356,8 +349,7 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 20px;
   }
 
-  .lang
-  .lang__btn {
+  .lang .lang__btn {
     font-size: 12px;
   }
 
@@ -410,20 +402,16 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-left: 21px;
   }
 
-  .top-content__two-boxes_1000 {
+  .top-content__main-img {
     position: absolute;
     top: 145px;
     right: 0px;
   }
-
-  .top-content__two-boxes {
-    display: none;
-  }
 }
+
 @media (min-width: 1000px) {
   .top-header__menu-btn,
-  .top-header__search-btn,
-  .top-content__two-boxes_786 {
+  .top-header__search-btn {
     display: none;
   }
 }
@@ -432,8 +420,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .menu,
   .top-header__input,
   .top-header__profile-btn,
-  .lang,
-  .top-content__two-boxes_1000 {
+  .lang {
     display: none;
   }
 
@@ -496,24 +483,17 @@ input[type="search"]::-webkit-search-results-decoration {
   .top-content__text {
     max-width: 350px;
     margin: 20px 0 38px 0;
-}
+  }
 
-.top-content__two-boxes_786 {
-  position: absolute;
-  top: -8px;
-  right: 0;
-}
-}
-
-@media (min-width: 651px) {
-  .top-content__two-boxes_480 {
-    display: none;
+  .top-content__main-img {
+    position: absolute;
+    top: -8px;
+    right: 0;
   }
 }
 
 @media (max-width: 650px) {
-  .top-header__number-link,
-  .top-content__two-boxes_786 {
+  .top-header__number-link {
     display: none;
   }
 
@@ -550,16 +530,10 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 14px;
   }
 
-  .top-content__two-boxes_480 {
+  .top-content__main-img {
     position: absolute;
     top: 101px;
     right: 0;
-  }
-}
-
-@media (min-width: 451px) {
-  .top-content__two-boxes_320 {
-    display: none;
   }
 }
 
@@ -615,11 +589,7 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-left: 91px;
   }
 
-  .top-content__two-boxes_480 {
-    display: none;
-  }
-
-  .top-content__two-boxes_320 {
+  .top-content__main-img {
     position: absolute;
     top: 188px;
     right: 0;
@@ -684,7 +654,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .burger-menu__link {
   display: inline-block;
   margin-bottom: 8px;
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -697,12 +667,12 @@ input[type="search"]::-webkit-search-results-decoration {
 .burger-menu__link--active {
   margin-bottom: 16px;
   padding: 7px 14px;
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 105.5%;
-  color: #FAFBFD;
+  color: #fafbfd;
   background: #272525;
   border-radius: 6px;
 }
@@ -732,7 +702,7 @@ input[type="search"]::-webkit-search-results-decoration {
   line-height: 105.5%;
   font-weight: 600;
   text-decoration: none;
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 
 .burger-menu__sublink--active {
@@ -740,14 +710,14 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #272525;
 }
 
-.contacts{
-margin-top: 36px;
-text-align: center;
+.contacts {
+  margin-top: 36px;
+  text-align: center;
 }
 
 .contacts__email {
   display: block;
-  font-family: 'Gilroy', sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
