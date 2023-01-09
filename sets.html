@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gifts and Merch</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/fonts.css" />
-    <link rel="stylesheet" href="./css/slyles.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gifts and Merch</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <link rel="stylesheet" href="./css/slyles.css" />
+</head>
+<body>
+<div>
     <header class="page-header">
       <div class="top-header main-container">
         <a href="/">
           <img class="top-header__logo" src="./img/gifts-and-merch-logo.svg" alt="GIFTS & MERCH" />
         </a>
-        <button class="top-header__search-btn btn show-mobile" type="button"></button>
-        <input class="top-header__input hide-mobile" type="search" placeholder="Поиск" />
+        <button class="top-header__search-btn btn" type="button"></button>
+        <input class="top-header__input" type="search" placeholder="Поиск" />
         <a class="top-header__number-link" href="tel:+380630130103">+380 630 130 103</a>
-        <button class="top-header__profile-btn btn hide-mobile" type="button">
+        <button class="top-header__profile-btn btn" type="button">
           <img class="top-header__profile-img" src="./img/profile-icon.svg" width="33" height="33" alt="profile" />
         </button>
-        <div class="lang hide-mobile">
+        <div class="lang">
           <button class="lang__btn lang__btn--active btn" type="button">Ru</button>
           /
           <button class="lang__btn btn" type="button">Eng</button>
         </div>
-        <button class="top-header__menu-btn btn show-mobile" type="button" aria-label="Открыть мобильное мкню"></button>
+        <button class="top-header__menu-btn btn" type="button" aria-label="Открыть мобильное мкню"></button>
       </div>
-      <div class="menu hide-mobile">
+      <div class="menu">
         <div class="menu__container main-container">
           <nav class="menu__nav">
             <ul class="menu__list">
@@ -94,10 +95,10 @@
                   <a class="burger-menu__sublink" href="/backpacks">Рюкзаки</a>
                 </li>
                 <li>
-                  <a class="burger-menu__ssublink" href="/waist-bags">Бананки</a>
+                  <a class="burger-menu__sublink" href="/waist-bags">Бананки</a>
                 </li>
                 <li>
-                  <a class="burger-menu__ssublink" href="/eco-bags_shoppers">Эко-сумки/Шопперы</a>
+                  <a class="burger-menu__sublink" href="/eco-bags_shoppers">Эко-сумки/Шопперы</a>
                 </li>
                 <li>
                   <a class="burger-menu__sublink" href="/plaid">Пледы</a>
@@ -133,20 +134,34 @@
       </div>
     </header>
 
-    <div class="top-content">
-      <div>
-        <div class="">
-          <button class="btn" type="button">Главная</button>
-          /
-          <button class="btn" type="button">Наборы</button>
+    <div class="page-top-content">
+      <div class="top-content main-container">
+        <div class="top-content__create-or-choose-a-box">
+          <div class="top-content__main-or-sets">
+            <button class="btn main-or-sets__btn" type="button">Главная</button>
+            /
+            <button class="btn main-or-sets__btn main-or-sets__btn--active" type="button">Наборы</button>
+          </div>
+          <h1 class="top-content__title">Подарочные наборы это необычные......</h1>
+          <p class="top-content__text">Почему? Потому что это ощутимо и это волнует. Это вовлекает, повышает осведомленность и вызывает эмоции.</p>
+          <button class="btn top-content__write-to-the-manager" type="button">Написать менеджеру</button>
+          <button class="btn top-content__create-a-box" type="button">Создать свой</button>
         </div>
-        <h1>Подарочные наборы<br />это необычные......</h1>
-        <p>Почему? Потому что это ощутимо и это волнует. Это вовлекает,<br />повышает осведомленность и вызывает эмоции.</p>
-        <button class="btn" type="button">Выбрать готовый бокс</button>
-        <button class="btn" type="button">Создать свой</button>
+        <!-- <img class="top-content__two-boxes" src="./img/Two boxes.png" alt="Two boxes" />
+        <img class="top-content__two-boxes_1000" src="./img/Two boxes1000.png" alt="Two boxes" />
+        <img class="top-content__two-boxes_786" src="./img/Two boxes786.png" alt="Two boxes" />
+        <img class="top-content__two-boxes_480" src="./img/Two boxes480.png" alt="Two boxes" />
+        <img class="top-content__two-boxes_320" src="./img/Two boxes320.png" alt="Two boxes" /> -->
       </div>
-      <img src="./img/Box№1.svg" alt="Box №1" />
-      <img src="./img/Box№2.svg" alt="Box №2" />
+      <picture>
+        <source srcset="./img/Two-boxes.png" type="image/png" media="(min-width:1501px)"/>
+        <source srcset="./img/Two-boxes1000.png" type="image/png" media="(min-width:1000px)"/>
+        <source srcset="./img/Two-boxes786.png" type="image/png" media="(min-width:651px)"/>
+        <source srcset="./img/Two-boxes480.png" type="image/png" media="(min-width:451px)"/>
+        <source srcset="./img/Two-boxes320.png" type="image/png" media="(max-width:450px)"/>
+        <img class="top-content__main-img" src="./img/Two-boxes.png" alt="Two boxes"/>
+      </picture>
     </div>
-  </body>
+</div>
+</body>
 </html>

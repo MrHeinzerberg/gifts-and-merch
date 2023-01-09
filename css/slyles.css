@@ -1,5 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
+}
+
+.foo {
+  /* width: 25%; */
+  /* width: calc(25% - 30px); */
+  width: calc(25% - 23px);
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -14,7 +24,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .main-container {
-  max-width: 1600px;
+  max-width: 1664px;
   margin: 0 auto;
   padding: 0 32px;
 }
@@ -23,7 +33,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 146px;
   padding-top: 41px;
   padding-bottom: 45px;
 }
@@ -42,7 +52,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .top-header__input {
   display: block;
-  width: 490px;
+  width: 491px;
   height: 60px;
   padding-left: 70px;
   border: 4px solid #272525;
@@ -101,8 +111,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: auto;
 }
 
-.lang
-.lang__btn {
+.lang .lang__btn {
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -156,7 +165,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .menu__link {
   display: flex;
-  height: 20px;
+  height: 100%;
   padding: 40px;
   font-family: "Gilroy", sans-serif;
   font-style: normal;
@@ -186,6 +195,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background: #272525;
   border-radius: 6px;
   pointer-events: none;
+  z-index: 1;
 }
 
 .menu__sale {
@@ -220,14 +230,89 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 100%;
 }
 
-.top-content {
+.page-top-content {
+  position: relative;
   height: 605px;
-  background: linear-gradient(38.95deg, #9796f0 -10.38%, #fbc7d4 107.56%)
+  background: linear-gradient(38.95deg, #9796f0 -10.38%, #fbc7d4 107.56%);
+  z-index: -2;
+}
+
+.top-content {
+  display: flex;
+  padding-top: 48px;
+}
+
+.top-content__create-or-choose-a-box {
+  max-width: 600px;
+}
+
+.top-content__main-or-sets,
+.main-or-sets__btn {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 400;
+  color: #7981ad;
+}
+
+.main-or-sets__btn--active,
+.top-content__main-or-sets {
+  color: #524983;
+}
+
+.top-content__title {
+  margin: 20px 0 20px 0;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #272525;
+}
+
+.top-content__text {
+  margin: 0 0 42px 0;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 400;
+  color: #454747;
+}
+
+.top-content__write-to-the-manager {
+  padding: 18px 39px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 140%;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #3c336c;
+  border-radius: 60px;
+}
+
+.top-content__create-a-box {
+  margin-left: 45px;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 140%;
+  font-weight: 500;
+  color: #524983;
+}
+
+.top-content__main-img {
+  position: absolute;
+  right: 20px;
+  top: -57px;
 }
 
 @media (max-width: 1500px) {
   .top-header {
-    height: 36px;
+    height: 103px;
     padding-top: 27px;
     padding-bottom: 40px;
   }
@@ -251,6 +336,8 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .top-header__number-link {
+    width: 185px;
+    height: 36px;
     padding: 11px 37px;
     font-size: 14px;
     box-shadow: 0 3.61px 15.04px rgba(121, 129, 173, 0.45);
@@ -262,8 +349,7 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 20px;
   }
 
-  .lang
-  .lang__btn {
+  .lang .lang__btn {
     font-size: 12px;
   }
 
@@ -272,26 +358,69 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .menu__link {
-    width: 100px;
+    width: 140px;
     padding: 40px 20px;
   }
 
   .menu__sale-link {
-    width: 195px;
+    width: 340px;
     height: 100%;
     padding-right: 150px;
     font-size: 24px;
     line-height: 24px;
   }
+
+  .top-content {
+    padding: 68px 20px 0 20px;
+  }
+
+  .top-content__create-or-choose-a-box {
+    max-width: 500px;
+  }
+
+  .top-content__main-or-sets {
+    display: none;
+  }
+
+  .top-content__title {
+    margin: 0;
+  }
+
+  .top-content__text {
+    margin: 20px 0 34px 0;
+    font-size: 16px;
+    color: #272525;
+  }
+
+  .top-content__write-to-the-manager {
+    padding: 19px 42px;
+    font-family: "Gilroy", sans-serif;
+    font-size: 16px;
+  }
+
+  .top-content__create-a-box {
+    margin-left: 21px;
+  }
+
+  .top-content__main-img {
+    position: absolute;
+    top: 145px;
+    right: 0px;
+  }
 }
+
 @media (min-width: 1000px) {
-  .show-mobile {
+  .top-header__menu-btn,
+  .top-header__search-btn {
     display: none;
   }
 }
 
 @media (max-width: 999px) {
-  .hide-mobile {
+  .menu,
+  .top-header__input,
+  .top-header__profile-btn,
+  .lang {
     display: none;
   }
 
@@ -314,7 +443,7 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 21px;
     margin: 0 0 0 auto;
     padding: 0;
-    background: transparent url(../img/search-btnmobile.svg) no-repeat center;
+    background: transparent url(../img/search-btn-mobile.svg) no-repeat center;
     border: 0;
     cursor: pointer;
   }
@@ -332,6 +461,35 @@ input[type="search"]::-webkit-search-results-decoration {
     border: 0;
     cursor: pointer;
   }
+
+  .page-top-content {
+    height: 497px;
+  }
+
+  .top-content {
+    padding-top: 48px;
+  }
+
+  .top-content__create-or-choose-a-box {
+    max-width: 470px;
+  }
+
+  .top-content__title {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.04em;
+  }
+
+  .top-content__text {
+    max-width: 350px;
+    margin: 20px 0 38px 0;
+  }
+
+  .top-content__main-img {
+    position: absolute;
+    top: -8px;
+    right: 0;
+  }
 }
 
 @media (max-width: 650px) {
@@ -346,6 +504,36 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .top-header__search-btn {
     margin-right: 30px;
+  }
+
+  .page-top-content {
+    height: 446px;
+  }
+
+  .top-content {
+    padding: 35px 19px 0 19px;
+  }
+
+  .top-content__text {
+    max-width: 256px;
+    margin-bottom: 31px;
+  }
+
+  .top-content__write-to-the-manager {
+    padding: 16px 34px;
+    font-size: 14px;
+  }
+
+  .top-content__create-a-box {
+    display: block;
+    margin: 7px 0 0 56px;
+    font-size: 14px;
+  }
+
+  .top-content__main-img {
+    position: absolute;
+    top: 101px;
+    right: 0;
   }
 }
 
@@ -370,6 +558,42 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 20px;
     height: 12px;
     background-size: 20px 12px;
+  }
+
+  .page-top-content {
+    height: 631px;
+  }
+
+  .top-content {
+    padding-top: 33px;
+  }
+
+  .top-content__title {
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .top-content__text {
+    max-width: 281px;
+    margin: 14px 0 0 0;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .top-content__write-to-the-manager {
+    margin: 345px 0 0 36px;
+  }
+
+  .top-content__create-a-box {
+    margin-left: 91px;
+  }
+
+  .top-content__main-img {
+    position: absolute;
+    top: 188px;
+    right: 0;
+    z-index: -1;
   }
 }
 
@@ -430,7 +654,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .burger-menu__link {
   display: inline-block;
   margin-bottom: 8px;
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -443,12 +667,12 @@ input[type="search"]::-webkit-search-results-decoration {
 .burger-menu__link--active {
   margin-bottom: 16px;
   padding: 7px 14px;
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 105.5%;
-  color: #FAFBFD;
+  color: #fafbfd;
   background: #272525;
   border-radius: 6px;
 }
@@ -478,7 +702,7 @@ input[type="search"]::-webkit-search-results-decoration {
   line-height: 105.5%;
   font-weight: 600;
   text-decoration: none;
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 
 .burger-menu__sublink--active {
@@ -486,14 +710,14 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #272525;
 }
 
-.contacts{
-margin-top: 36px;
-text-align: center;
+.contacts {
+  margin-top: 36px;
+  text-align: center;
 }
 
 .contacts__email {
   display: block;
-  font-family: 'Gilroy', sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
