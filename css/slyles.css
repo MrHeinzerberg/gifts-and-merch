@@ -342,6 +342,10 @@ input[type="search"]::-webkit-search-results-decoration {
   overflow: hidden;
 }
 
+.set__image {
+  object-fit: cover;
+}
+
 .set__slider {
   position: absolute;
   right: 23px;
