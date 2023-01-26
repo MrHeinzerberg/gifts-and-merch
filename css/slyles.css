@@ -340,6 +340,7 @@ input[type="search"]::-webkit-search-results-decoration {
   border-radius: 15px;
   overflow: hidden;
 }
+
 .set:hover {
   box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
 }
@@ -514,7 +515,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .information-on-sets__title {
   margin: 0;
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', sans-serif;
   font-style: normal;
   font-size: 36px;
   line-height: 130%;
@@ -524,7 +525,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .information-on-sets__text {
   margin: 20px 0 0 0;
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 130%;
@@ -534,6 +535,79 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .information-on-sets__text--another-colour {
   color: #524983;
+}
+
+.mid-content__creative-block {
+  max-width: 789px;
+  padding-top: 126px
+}
+
+.creative-block__title {
+  display: block;
+  margin: auto;
+}
+
+.creative-block__main-question {
+  margin: 10px 0 23px 0;
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+  color: #272525;
+}
+
+.creative-block__second-question {
+  max-width: 592px;
+  margin-bottom: 36px;
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  letter-spacing: 0.065em;
+  color: #454747;
+}
+
+.creative-block_text {
+  max-width: 300px;
+  margin: 0;
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  color: #222227;
+}
+
+.creative-block_text span {
+  color: #1FAB8A;
+}
+
+.creative-block__block-form {
+  display:flex;
+}
+
+form {
+  display: grid;
+  gap: 34px;
+}
+
+.creative-block__form {
+  display: block;
+  width: 336px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #272525
+}
+
+.creative-block__form::placeholder {
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #454747;
 }
 
 @media (max-width: 1500px) {
