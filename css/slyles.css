@@ -85,11 +85,14 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .top-header__number-link:hover,
-.top-header__number-link:focus {
+.top-header__number-link:focus,
+.creative-block_order:hover,
+.creative-block_order:focus {
   background-color: #1b886e;
 }
 
-.top-header__number-link:active {
+.top-header__number-link:active,
+.creative-block_order:active {
   background-color: #156b57;
 }
 
@@ -305,6 +308,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .page-mid-content {
+  position: relative;
+  overflow: hidden;
   background-color: #e5e5e5;
 }
 
@@ -502,6 +507,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .information-on-sets {
   display: flex;
   justify-content: space-between;
+  gap: 62px;
 }
 
 .mid-content__information-on-sets {
@@ -509,8 +515,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .information-on-sets__item {
-  width: calc(33% - 60px);
-  height: 240px;
+  width: calc(33% - 96px);
+  max-height: 240px;
 }
 
 .information-on-sets__title {
@@ -539,7 +545,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .mid-content__creative-block {
   max-width: 789px;
-  padding-top: 126px
+  padding-top: 144px
 }
 
 .creative-block__title {
@@ -548,7 +554,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .creative-block__main-question {
-  margin: 10px 0 23px 0;
+  margin: 32px 0 0 0;
   font-family: 'Gilroy', sans-serif;
   font-style: normal;
   font-size: 48px;
@@ -589,13 +595,16 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 form {
-  display: grid;
-  gap: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  margin-left: 88px;
 }
 
 .creative-block__form {
   display: block;
-  width: 336px;
+  flex-basis: 100%;
+  max-inline-size: 336px;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #272525
@@ -609,6 +618,25 @@ form {
   font-weight: 400;
   color: #454747;
 }
+
+.creative-block_order {
+  margin-top: 4px;
+  padding: 19px 105px;
+  font-family: "Montswrrat", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #1fab8a;
+  border-radius: 60px;
+}
+
+.creative-block__image {
+  position: absolute;
+  right: 115px;
+  bottom: -21px;
+  }
 
 @media (max-width: 1500px) {
   .top-header {
@@ -707,6 +735,7 @@ form {
     top: 145px;
     right: 0px;
   }
+
   .mid-content__cards {
     margin: auto;
   }
@@ -799,8 +828,44 @@ form {
   }
 
   .information-on-sets__item {
-    width: calc(50% - 32px);
+    width: calc(50% - 31px);
   }
+
+  .mid-content__creative-block {
+    max-width: 726px;
+    padding-top: 188px
+  }
+
+  .creative-block__title {
+  margin-top: -21px;
+  }
+
+  .creative-block__main-question {
+    max-width: 600px;
+    margin: 43px 0 23px 0;
+    line-height: 53px;
+  }
+
+  .creative-block__second-question {
+    margin-bottom: 60px;
+  }
+
+  form {
+    margin-left: 90px;
+  }
+
+  .creative-block_order {
+    margin-top: 4px;
+    padding-left: 107px;
+  }
+
+  .creative-block__image {
+    right: -175px;
+    bottom: 315px;
+    width: 595px;
+    height: 536px;
+    object-fit:cover;
+    }
 }
 
 @media (min-width: 1000px) {
