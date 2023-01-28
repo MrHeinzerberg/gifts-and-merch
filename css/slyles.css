@@ -516,7 +516,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .information-on-sets__item {
   width: calc(33% - 96px);
-  max-height: 240px;
 }
 
 .information-on-sets__title {
@@ -575,7 +574,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #454747;
 }
 
-.creative-block_text {
+.creative-block__text {
   max-width: 300px;
   margin: 0;
   font-family: 'Gilroy', sans-serif;
@@ -586,7 +585,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #222227;
 }
 
-.creative-block_text span {
+.creative-block__text span {
   color: #1FAB8A;
 }
 
@@ -594,7 +593,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display:flex;
 }
 
-form {
+.creative-block__order {
   display: flex;
   flex-wrap: wrap;
   gap: 36px;
@@ -619,7 +618,7 @@ form {
   color: #454747;
 }
 
-.creative-block_order {
+.creative-block__order-btn {
   margin-top: 4px;
   padding: 19px 105px;
   font-family: "Montswrrat", sans-serif;
@@ -854,11 +853,11 @@ form {
     margin-bottom: 60px;
   }
 
-  form {
+  .creative-block__order {
     margin-left: 90px;
   }
 
-  .creative-block_order {
+  .creative-block__order-btn {
     margin-top: 4px;
     padding-left: 107px;
   }
@@ -1063,7 +1062,7 @@ form {
 
   }
 
-  .creative-block_order {
+  .creative-block__order-btn {
     padding-left: 105px;
   }
 
@@ -1257,11 +1256,11 @@ form {
     display: block;
   }
 
-  .creative-block_text {
+  .creative-block__text {
     max-width: 395px;
   }
 
-  form {
+  .creative-block__order {
     margin: 66px 0 0 0;
   }
 
@@ -1472,7 +1471,7 @@ form {
     text-align: center;
   }
 
-  .creative-block_text {
+  .creative-block__text {
     max-width: 100%;
     font-size: 20px;
     line-height: 24px;
@@ -1480,12 +1479,12 @@ form {
     text-align: center;
   }
 
-  form {
+  .creative-block__order {
     margin: 42px 0 0 0;
     gap: 35px;
   }
 
-  .creative-block_order {
+  .creative-block__order-btn {
     margin-top: 6px;
   }
 
