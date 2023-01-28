@@ -639,6 +639,10 @@ form {
   }
 
 @media (max-width: 1500px) {
+  .main-container {
+    padding: 0 20px;
+  }
+
   .top-header {
     height: 103px;
     padding-top: 27px;
@@ -1039,6 +1043,36 @@ form {
   .mid-content__information-on-sets {
     display: none;
   }
+
+  .mid-content__creative-block {
+    max-width: 892px;
+    padding-top: 157px
+  }
+
+  .creative-block__title {
+    margin: auto;
+  }
+
+  .creative-block__main-question {
+    margin: 43px 0 0 0;
+    line-height: 53px;
+  }
+
+  .creative-block__second-question {
+    margin: 23px 0 60px 0;
+
+  }
+
+  .creative-block_order {
+    padding-left: 105px;
+  }
+
+  .creative-block__image {
+    right: -96px;
+    bottom: 353px;
+    width: 342px;
+    height: 318px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -1194,6 +1228,50 @@ form {
     font-size: 18px;
     font-weight: 500;
   }
+
+  .mid-content__creative-block {
+    max-width: 100%;
+    padding-top: 79px;
+    padding-bottom: 450px;
+  }
+
+  .creative-block__title {
+    width: 206px;
+    height: 45px;
+  }
+
+  .creative-block__main-question {
+    margin-top: 36px;
+    font-size: 27px;
+    line-height: 110.9%;
+  }
+
+  .creative-block__second-question {
+    max-width: 100%;
+    margin: 14px 0 52px 0;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .creative-block__block-form {
+    display: block;
+  }
+
+  .creative-block_text {
+    max-width: 395px;
+  }
+
+  form {
+    margin: 66px 0 0 0;
+  }
+
+  .creative-block__image {
+    right: 0;
+    bottom: 0;
+    width: 442px;
+    height: 348px;
+    object-fit: contain;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1371,6 +1449,49 @@ form {
     padding: 0 12px 0 12px;
     font-size: 21px;
     box-shadow: 0px 14.0057px 17.5072px -3.50143px rgba(26, 32, 44, 0.1), 0px 7.00286px 7.00286px -3.50143px rgba(26, 32, 44, 0.04);
+  }
+
+  .mid-content__creative-block {
+    padding-top: 88px;
+  }
+
+  .creative-block__title {
+    width: 154px;
+    height: 33px;
+  }
+
+  .creative-block__main-question {
+    margin-top: 28px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .creative-block__second-question {
+    margin: 13px 0 45px 0;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .creative-block_text {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222227;
+    text-align: center;
+  }
+
+  form {
+    margin: 42px 0 0 0;
+    gap: 35px;
+  }
+
+  .creative-block_order {
+    margin-top: 6px;
+  }
+
+  .creative-block__image {
+    right: -54px;
+    bottom: 30px;
   }
 }
 
