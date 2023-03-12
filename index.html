@@ -7,8 +7,212 @@
     <title>Gifts and Merch</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
-    <link rel="stylesheet" href="./css/slyles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <header class="page-header">
+      <div class="top-header main-container">
+        <a href="/">
+          <img class="top-header__logo" src="./img/gifts-and-merch-logo.svg" alt="GIFTS & MERCH" />
+        </a>
+        <button class="top-header__search-btn btn" type="button"></button>
+        <input class="top-header__input" type="search" placeholder="Поиск" />
+        <a class="top-header__number-link" href="tel:+380630130103">+380 630 130 103</a>
+        <button class="top-header__profile-btn btn" type="button">
+          <img class="top-header__profile-img" src="./img/profile-icon.svg" width="33" height="33" alt="profile" />
+        </button>
+        <div class="lang">
+          <button class="lang__btn lang__btn--active btn" type="button">Ru</button>
+          /
+          <button class="lang__btn btn" type="button">Eng</button>
+        </div>
+        <button class="top-header__menu-btn btn" type="button" aria-label="Открыть мобильное мкню"></button>
+      </div>
+      <div class="menu">
+        <div class="menu__container main-container">
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li>
+                <a class="menu__link" href="/sets">Наборы</a>
+              </li>
+              <li>
+                <a class="menu__link menu__link--active" href="/all-goods">Все товары</a>
+              </li>
+              <li>
+                <a class="menu__link" href="/information">Информация</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu__sale">
+            <a class="menu__sale-link" href="/">
+              Шопперы со скидкой - 25%
+              <img class="menu__sale-img" src="./img/shopping-bags.png" alt="Two bags - Cotton tote bag mock-up" height="100" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="burger-menu">
+        <div class="burger-menu__top">
+          <div class="burger-menu-lang">
+            <button class="burger-menu-lang__btn burger-menu-lang__btn--active btn" type="button">Ru</button>
+            /
+            <button class="burger-menu-lang__btn btn" type="button">Eng</button>
+          </div>
+          <button class="burger-menu__profile-btn btn" type="button">
+            <img class="burger-menu__profile-img" src="./img/profile-icon.svg" width="20" height="20" alt="profile" />
+          </button>
+          <button class="burger-menu__close-btn btn" type="button">
+            <img src="./img/burger-menu_cancel.svg" width="20" height="20" alt="x" />
+          </button>
+        </div>
+        <div class="burger-menu__content">
+          <ul class="burger-menu-list">
+            <li>
+              <a class="burger-menu__link" href="/sets">Наборы</a>
+            </li>
+            <li>
+              <a class="burger-menu__link burger-menu__link--active" href="/all-goods">Все товары</a>
+            </li>
+            <li>
+              <ul class="menu__list burger-menu__goods">
+                <li>
+                  <a class="burger-menu__sublink burger-menu__sublink--active" href="/hoodies">Толстовки</a>
+                </li>
+                <li>
+                  <a class="burger-menu__sublink" href="/sweatshirts">Свитшоты</a>
+                </li>
+                <li>
+                  <a class="burger-menu__sublink" href="/t-shirts">Футболки</a>
+                </li>
+                <li>
+                  <a class="burger-menu__sublink" href="/polo">Поло</a>
+                </li>
+                <li>
+                  <a class="burger-menu__sublink" href="/vests">Жилетки</a>
+                </li>
+                <li>
+                  <a class="burger-menu__sublink" href="/backpacks">Рюкзаки</a>
+                </li>
+                <li>
+                  <a class="burger-menu__sublink" href="/waist-bags">Бананки</a>
+                </li>
+                <li>
+                  <a class="burger-menu__sublink" href="/eco-bags_shoppers">Эко-сумки/Шопперы</a>
+                </li>
+                <li>
+                  <a class="burger-menu__sublink" href="/plaid">Пледы</a>
+                </li>
+                <li>
+                  <a class="burger-menu__sublink" href="/socks">Носки</a>
+                </li>
+                <li>
+                  <a class="burger-menu__sublink" href="/masks">Маски</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="burger-menu__link" href="/information">Информация</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <a class="contacts__email" type="button">example@gmail.com</a>
+          <a class="top-header__number-link contacts__number-link" href="tel:+380630130103">+380 630 130 103</a>
+          <div class="contacts__networks">
+            <a href="facebook.com">
+              <img src="./img/Facebook.svg" alt="Facebook" />
+            </a>
+            <a class="contacts__instagram" href="instagram.com">
+              <img src="./img/Instagram.svg" alt="Instagram" />
+            </a>
+            <a href="linkedin.com">
+              <img src="./img/LinkedIn.svg" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-top-content">
+      <div class="top-content main-container"></div>
+    </div>
+    <div class="page-mid-content">
+      <div class="mid-content main-container"></div>
+    </div>
+    <footer class="page-footer">
+      <div class="footer main-container">
+        <div class="footer__item">
+          <a href="/">
+            <img class="footer__logo" src="./img/gifts-and-merch-logo.svg" alt="GIFTS & MERCH" />
+          </a>
+          <p class="footer__tegline">Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание свежее</p>
+          <a class="footer__phone-number" href="”tel:+380630130103”">+380 630 130 103</a>
+          <a class="footer__email" href="example@gmail.com?subject=Вопрос по наборам"> example@gmail.com</a>
+          <ul class="footer__networks-list">
+            <li>
+              <a href="facebook.com">
+                <img class="footer__networks-img" src="./img/Facebook.svg" alt="Facebook" />
+              </a>
+            </li>
+            <li class="footer__networks-instagram">
+              <a href="instagram.com">
+                <img class="footer__networks-img" src="./img/Instagram.svg" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="linkedin.com">
+                <img class="footer__networks-img" src="./img/LinkedIn.svg" alt="LinkedIn" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__useful-links footer__categories">
+          <h5 class="footer__headlines">Категории</h5>
+          <ul class="footer__lists">
+            <li>
+              <a class="footer__links" href="/">Пошив</a>
+            </li>
+            <li>
+              <a class="footer__links" href="/">Все товары</a>
+            </li>
+            <li>
+              <a class="footer__links" href="/">Наборы</a>
+            </li>
+            <li>
+              <a class="footer__links" href="/">Производство</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__useful-links footer__info">
+          <h5 class="footer__headlines">Информация</h5>
+          <ul class="footer__lists">
+            <li>
+              <a class="footer__links" href="/">О нас</a>
+            </li>
+            <li>
+              <a class="footer__links" href="/">ЧаВо</a>
+            </li>
+            <li>
+              <a class="footer__links" href="/">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__useful-links footer__contact">
+          <button class="footer__headlines footer__contact-the-manager-title" type="button">Связаться с менеджером</button>
+          <p class="footer__question-for-manager">
+            Есть вопрос на который не нашли ответ? Оставьте контакт и наш менеджер свяжеться с вами
+          </p>
+          <form class="footer__contact-the-manager">
+            <input class="footer__input-tel" type="tel" placeholder="Номер телефона" />
+            <input class="footer__input-btn" type="submit" value="" />
+          </form>
+        </div>
+      </div>
+      <div class="footer__privacy-policy privacy-policy">
+        <p class="privacy-policy__item">© 2022 . All rights reserved.</p>
+        <a class="privacy-policy__link" href="/" target="_blank">Политика конфиденциальности</a>
+      </div>
+    </footer>
+    Поделить стили: 1. Вынести основные стили (*, бади, маин контейнер, mid-content, хедер и футер) в файл main.css 2. Создать файл стилей
+    только для главной страницы index.css
   </body>
 </html>

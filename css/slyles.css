@@ -663,6 +663,15 @@ input[type="search"]::-webkit-search-results-decoration {
   max-width: 280px;
 }
 
+.footer__contact-the-manager-title {
+  width: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
 .footer__logo {
   width: 489px;
   height: 40px;
@@ -1058,8 +1067,9 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .creative-block__decorative-shadow {
-    top: 55px;
-    left: -190px;
+    top: 80px;
+    left: -270px;
+    height: 647px;
   }
 
   .footer {
@@ -1077,8 +1087,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .footer__contact {
     display: flex;
+    justify-content: space-between;
     margin-top: 52px;
-    max-width: 959px;
+    width: 100%;
+    max-width: 100%;
+
   }
 
   .footer__categories {
@@ -1089,12 +1102,8 @@ input[type="search"]::-webkit-search-results-decoration {
     width: calc(23% - 0px);
   }
 
-  .footer__contact-the-manager-title {
-    width: calc(32% - 3px);
-  }
-
   .footer__question-for-manager {
-    width: calc(40% - 5px);
+    width: 360px;
     line-height: 130%;
   }
 
@@ -1310,6 +1319,12 @@ input[type="search"]::-webkit-search-results-decoration {
     bottom: 353px;
     width: 342px;
     height: 318px;
+  }
+
+  .creative-block__decorative-shadow {
+    top: 70px;
+    left: -290px;
+    height: 647px;
   }
 
   .footer {
@@ -1587,8 +1602,14 @@ input[type="search"]::-webkit-search-results-decoration {
     object-fit: contain;
   }
 
+  .creative-block__decorative-shadow {
+    top: 755px;
+    left: -20px;
+    height: 392px;
+  }
+
   .footer {
-    padding-top: 47px;
+    padding-top: 146px;
   }
 
   .footer__item {
@@ -1629,6 +1650,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .footer__contact {
     margin: auto;
+    text-align: center;
+  }
+  .footer__contact-the-manager-title {
     text-align: center;
   }
 
@@ -1863,6 +1887,12 @@ input[type="search"]::-webkit-search-results-decoration {
     bottom: 29px;
   }
 
+  .creative-block__decorative-shadow {
+    top: 730px;
+    left: -30px;
+    height: 392px;
+  }
+
   .footer {
     padding-top: -6px;
   }
@@ -1894,6 +1924,9 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .footer__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 52px;
   }
 
