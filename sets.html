@@ -7,6 +7,7 @@
     <title>Gifts and Merch</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/slyles.css" />
   </head>
   <body>
@@ -314,9 +315,90 @@
               <button class="creative-block__order-btn btn" type="button">Заказать</button>
             </form>
           </div>
-          <img class="creative-block__image" src="./img/Creative_set.png" alt="Set example"
+          <img class="creative-block__image" src="./img/Creative_set.png" alt="Set example">
+          <picture>
+            <source srcset="./img/Rectangle1920.svg" type="image/svg" media="(min-width:1501px)" />
+            <source srcset="./img/Rectangle1000.svg" type="image/svg" media="(min-width:1000px)" />
+            <source srcset="./img/Rectangle786.svg" type="image/svg" media="(min-width:651px)" />
+            <source srcset="./img/Rectangle480.svg" type="image/svg" media="(min-width:451px)" />
+            <source srcset="./img/Rectangle320.svg" type="image/svg" media="(max-width:450px)" />
+            <img class="creative-block__decorative-shadow" src="./img/Rectangle1920.svg" alt="Decorative shadow" />
+          </picture>
         </div>
       </div>
     </div>
+    <footer class="page-footer">
+      <div class="footer main-container">
+        <div class="footer__item">
+          <a class="footer__logo-link" href="/">
+            <img class="footer__logo" src="./img/gifts-and-merch-logo.svg" alt="GIFTS & MERCH" />
+          </a>
+          <p class="footer__tegline">Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание свежее</p>
+          <a class="footer__phone-number" href=”tel:+380630130103”>+380 630 130 103</a>
+          <a class="footer__email" href="example@gmail.com?subject=Вопрос по наборам">
+          example@gmail.com</a>
+          <ul class="footer__networks-list">
+            <li>
+              <a href="facebook.com">
+                <img class="footer__networks-img" src="./img/Facebook.svg" alt="Facebook" />
+              </a>
+            </li>
+            <li class="footer__networks-instagram">
+              <a href="instagram.com">
+                <img class="footer__networks-img" src="./img/Instagram.svg" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="linkedin.com">
+                <img class="footer__networks-img" src="./img/LinkedIn.svg" alt="LinkedIn" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__useful-links footer__categories">
+          <h5 class="footer__headlines" >Категории</h5>
+          <ul class="footer__lists">
+            <li>
+                <a class="footer__links" href="/">Пошив</a>
+            </li>
+            <li>
+                <a class="footer__links" href="/">Все товары</a>
+            </li>
+            <li>
+                <a class="footer__links" href="/">Наборы</a>
+            </li>
+            <li>
+                <a class="footer__links" href="/">Производство</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__useful-links footer__info">
+          <h5 class="footer__headlines">Информация</h5>
+          <ul class="footer__lists">
+            <li>
+              <a class="footer__links" href="/">О нас</a>
+            </li>
+            <li>
+              <a class="footer__links" href="/">ЧаВо</a>
+            </li>
+            <li>
+              <a class="footer__links" href="/">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__useful-links footer__contact">
+          <button class="footer__headlines footer__contact-the-manager-title" type="button">Связаться с менеджером</button>
+          <p class="footer__question-for-manager">Есть вопрос на который не нашли ответ? Оставьте контакт и наш менеджер свяжеться с вами</p>
+          <form class="footer__contact-the-manager">
+            <input class="footer__input-tel" type="tel" placeholder="Номер телефона">
+            <input class="footer__input-btn" type="submit" value="">
+          </form>
+        </div>
+      </div>
+      <div class="footer__privacy-policy privacy-policy">
+        <p class="privacy-policy__item">© 2022 . All rights reserved.</p>
+        <a class="privacy-policy__link" href="/" target="_blank">Политика конфиденциальности</a>
+      </div>
+    </footer>
   </body>
 </html>
