@@ -418,6 +418,44 @@
 }
 
 @media (max-width: 1500px) {
+  .top-content {
+    padding: 68px 20px 0 20px;
+  }
+
+  .top-content__create-or-choose-a-box {
+    max-width: 500px;
+  }
+
+  .top-content__main-or-sets {
+    display: none;
+  }
+
+  .top-content__title {
+    margin: 0;
+  }
+
+  .top-content__text {
+    margin: 20px 0 34px 0;
+    font-size: 16px;
+    color: #272525;
+  }
+
+  .top-content__write-to-the-manager {
+    padding: 19px 42px;
+    font-family: "Gilroy", sans-serif;
+    font-size: 16px;
+  }
+
+  .top-content__create-a-box {
+    margin-left: 21px;
+  }
+
+  .top-content__main-img {
+    position: absolute;
+    top: 145px;
+    right: 0px;
+  }
+
   .mid-content__cards {
     margin: auto;
   }
@@ -556,7 +594,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 999px) {
   .page-top-content {
     height: 497px;
   }

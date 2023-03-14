@@ -594,13 +594,13 @@ input[type="search"]::-webkit-search-results-decoration {
     cursor: pointer;
   }
 
-  .page-top-content {
+  /* .page-top-content {
     height: 497px;
   }
 
   .top-content {
     padding-top: 48px;
-  }
+  } */
 
   .footer {
     padding-top: 100px;
@@ -694,13 +694,13 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-right: 30px;
   }
 
-  .page-top-content {
+  /* .page-top-content {
     height: 446px;
   }
 
   .top-content {
     padding: 35px 19px 0 19px;
-  }
+  } */
 
   .footer {
     padding-top: 146px;
@@ -782,13 +782,13 @@ input[type="search"]::-webkit-search-results-decoration {
     background-size: 20px 12px;
   }
 
-  .page-top-content {
+  /* .page-top-content {
     height: 631px;
   }
 
   .top-content {
     padding-top: 33px;
-  }
+  } */
 
   .footer {
     padding-top: -6px;
