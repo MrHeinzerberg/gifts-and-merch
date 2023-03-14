@@ -227,7 +227,7 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 100%;
 }
 
-.page-top-content {
+/* .page-top-content {
   position: relative;
   height: 605px;
   background: linear-gradient(38.95deg, #9796f0 -10.38%, #fbc7d4 107.56%);
@@ -237,7 +237,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .top-content {
   display: flex;
   padding-top: 48px;
-}
+} */
 
 .page-footer {
   background: #f5f5f5;
@@ -794,6 +794,10 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-top: -6px;
   }
 
+  .footer__logo-link {
+    margin: auto;
+  }
+
   .footer__logo {
     width: 278px;
     height: 25px;
@@ -801,7 +805,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .footer__tegline {
     max-width: 270px;
-    margin: 6px 0 21px 12px;
+    margin: 6px auto 21px auto;
     font-size: 12px;
   }
 
