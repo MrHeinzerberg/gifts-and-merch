@@ -228,17 +228,103 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 100%;
 }
 
-/* .page-top-content {
+.page-top-content {
   position: relative;
-  height: 605px;
-  background: linear-gradient(38.95deg, #9796f0 -10.38%, #fbc7d4 107.56%);
-  z-index: -2;
+  height: 620px;
+  background: linear-gradient(42.14deg, #9796F0 -17.31%, #FBC7D4 106.72%);
+  overflow: hidden;
 }
 
 .top-content {
   display: flex;
-  padding-top: 48px;
-} */
+  padding-top: 75px;
+}
+
+.top-content__main-about-us {
+  max-width: 711px;
+}
+
+.top-content__title {
+  margin:  0 0 10px 0;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #272525;
+}
+
+.top-content__text {
+  max-width: 647px;
+  margin: 0 0 58px 0;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 400;
+  letter-spacing: 0.065em;
+  color: #272525;
+}
+
+.top-content__feachers-list {
+  display: flex;
+  margin: 0 0 0 -2px;
+  padding: 0;
+  list-style: none;
+}
+
+.top-content__feachers {
+  max-width: 230px;
+  padding-right: 57px;
+}
+
+.top-content__feachers-speed {
+  padding: 0;
+}
+
+.top-content__circle {
+  position: relative;
+  width: 86px;
+  height: 86px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #EACEFF;
+}
+
+.top-content__scribble-top,
+.top-content__scribble-bott {
+  position: absolute;
+}
+
+.top-content__scribble-top {
+  top: 5px;
+  right: -17px;
+}
+
+.top-content__scribble-bott {
+  left: -5px;
+  bottom: -11px;
+  transform: scale(-1,1) rotate(70deg);
+}
+
+.top-content__feacher-name {
+  margin: 17px 0 0 0;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #272525;
+  text-align: center;
+}
+
+.top-content__two-bitches {
+  position: absolute;
+  top: 9px;
+  right: 231px;
+}
 
 .page-footer {
   background: #f5f5f5;
@@ -470,7 +556,8 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 20px;
   }
 
-  .lang .lang__btn {
+  .lang,
+  .lang__btn {
     font-size: 12px;
   }
 
@@ -491,9 +578,64 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 24px;
   }
 
-  /* .top-content {
-    padding: 68px 20px 0 20px;
-  } */
+  .page-top-content {
+    height: 430px;
+  }
+
+  .top-content {
+    padding: 53px 0 0 42px;
+  }
+
+  .top-content__main-about-us {
+    max-width: 645px;
+  }
+
+  .top-content__text {
+    margin-bottom: 24px;
+  }
+
+  .top-content__feachers-list {
+    margin-left: -6px;
+  }
+
+  .top-content__feachers {
+    max-width: 170px;
+    padding-right: 16px;
+  }
+
+  .top-content__circle {
+    width: 52px;
+    height: 52px;
+  }
+
+  .top-content__scribble-top,
+  .top-content__scribble-bott {
+    width: 44px;
+    height: 22px;
+  }
+
+  .top-content__scribble-top {
+    top: 2px;
+    right: -25px;
+  }
+
+  .top-content__scribble-bott {
+    left: -18px;
+    bottom: -7px;
+  }
+
+  .top-content__feacher-name {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .top-content__two-bitches {
+    top: -7px;
+    right: 0px;
+    width: 572px;
+    height: 446px;
+  }
 
   .footer {
     padding-top: 131px;
@@ -595,13 +737,46 @@ input[type="search"]::-webkit-search-results-decoration {
     cursor: pointer;
   }
 
-  /* .page-top-content {
-    height: 497px;
+  .page-top-content {
+    height: 647px;
+    padding-bottom: 150px;
   }
 
   .top-content {
-    padding-top: 48px;
-  } */
+    display: block;
+    padding: 63px 20px 0 20px;
+  }
+
+  .top-content__main-about-us {
+    max-width: 100%;
+  }
+
+  .top-content__title {
+    max-width: 470px;
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .top-content__text {
+    max-width: 410px;
+    margin-bottom: 289px;
+    font-size: 16px;
+  }
+
+  .top-content__feachers-list {
+    margin-left: 17px;
+    justify-content: space-evenly;
+  }
+
+  .top-content__feachers {
+    padding: 0;
+  }
+
+  .top-content__two-bitches {
+    top: 51px;
+    right: -7px;
+    width: 573px;
+  }
 
   .footer {
     padding-top: 100px;
@@ -695,13 +870,60 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-right: 30px;
   }
 
-  /* .page-top-content {
-    height: 446px;
+  .page-top-content {
+    height: 698px;
+    padding-bottom: 73px;
   }
 
   .top-content {
-    padding: 35px 19px 0 19px;
-  } */
+    padding-top: 23px;
+  }
+
+  .top-content__title {
+    max-width: 360px;
+    margin-bottom: 12px;
+  }
+
+  .top-content__text {
+    max-width: 385px;
+    margin-bottom: 33px;
+  }
+
+  .top-content__feachers-list {
+    flex-direction: column;
+    margin-left: 4px;
+  }
+
+  .top-content__feachers {
+    padding-bottom: 22px;
+  }
+
+  .top-content__feachers-speed {
+    padding: 0;
+  }
+
+  .top-content__scribble-top {
+    top: 3px;
+    right: -29px;
+  }
+
+  .top-content__scribble-bott {
+    left: -18px;
+    bottom: -9px;
+  }
+
+  .top-content__feacher-name {
+    margin-top: 14px;
+    line-height: 19px;
+  }
+
+  .top-content__two-bitches {
+    top: 251px;
+    right: -207px;
+    width: 497px;
+    height: 387px;
+    transform: scale(-1,1);
+  }
 
   .footer {
     padding-top: 146px;
@@ -783,13 +1005,45 @@ input[type="search"]::-webkit-search-results-decoration {
     background-size: 20px 12px;
   }
 
-  /* .page-top-content {
-    height: 631px;
+  .page-top-content {
+    height: 692px;
   }
 
   .top-content {
-    padding-top: 33px;
-  } */
+    padding-top: 26px;
+  }
+
+  .top-content__title {
+    max-width: 243px;
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: start;
+  }
+
+  .top-content__text {
+    max-width: 229px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 127%;
+    text-align: start;
+  }
+
+  .top-content__feachers-list {
+    margin-left: -11px;
+  }
+
+  .top-content__feacher-name {
+    margin-top: 12px;
+    line-height: 20px;
+  }
+
+  .top-content__two-bitches {
+    top: 275px;
+    right: -262px;
+    width: 441px;
+    height: 344px;
+  }
 
   .footer {
     padding-top: -6px;
