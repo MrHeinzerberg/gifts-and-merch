@@ -232,7 +232,6 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
   height: 620px;
   background: linear-gradient(42.14deg, #9796F0 -17.31%, #FBC7D4 106.72%);
-  overflow: hidden;
 }
 
 .top-content {
@@ -738,8 +737,8 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .page-top-content {
-    height: 647px;
-    padding-bottom: 150px;
+    height: 497px;
+    margin-bottom: 150px;
   }
 
   .top-content {
@@ -873,6 +872,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .page-top-content {
     height: 698px;
     padding-bottom: 73px;
+    overflow: hidden;
   }
 
   .top-content {
