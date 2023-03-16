@@ -326,6 +326,145 @@ input[type="search"]::-webkit-search-results-decoration {
   right: 231px;
 }
 
+.page-mid-content {
+  background-color: #EEF1F6;
+}
+
+.mid-content {
+  position: relative;
+  padding-top: 40px;
+}
+
+.mid-content__title-block {
+  position: relative;
+  display: flex;
+}
+
+.mid-content__title {
+  position: relative;
+  margin: 0;
+}
+
+.mid-content__green-star {
+  position: absolute;
+  top: 1px;
+  right: -60px;
+}
+
+.mid-content__all-goods-link {
+  position: absolute;
+  top: 29px;
+  right: -63px;
+  display: flex;
+  text-decoration: none;
+}
+
+.mid-content__all-goods-text {
+  margin: 0 19px 0 0;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 400;
+  letter-spacing: 0.065em;
+  color: #272525;
+}
+
+.mid-content__title-block-text {
+  margin: 3px 0 28px 0;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 400;
+  letter-spacing: 0.065em;
+  color: #454747;
+}
+
+.mid-content__goods-management {
+  position: absolute;
+  top: 132px;
+  right: 92px;
+  display: flex;
+  align-items: center;
+  width: 274px;
+  height: 70px;
+  background-color: #FAFAFA;
+  border-radius: 16px;
+  box-shadow: 0px 16.0566px 22px -8px rgba(82, 73, 131, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
+}
+
+.goods-management__link {
+  padding-left: 18px;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 105.5%;
+  font-weight: 500;
+  color: #000000;
+}
+
+.goods-management__link:last-of-type {
+  padding-left: 28px;
+  color: rgba(31, 171, 138, 0.5);
+}
+
+.goods-management__close-btn {
+  position: absolute;
+  top: -6px;
+  right: -4px;
+}
+
+.mid-content__busket {
+  position: absolute;
+  top: 118px;
+  right: -31px;
+}
+
+.mid-content__pop-goods,
+.pop-goods__subgrid,
+.pop-goods__sub-subgrid {
+  display: grid;
+}
+
+.mid-content__pop-goods {
+  grid-template-columns: 69% 30%;
+  grid-column-gap: 1%;
+  height: 578px;
+  width: 100%;
+}
+
+.pop-goods__subgrid {
+  grid-template-rows: 54% 43.4%;
+  grid-row-gap: 2.7%;
+}
+
+.pop-goods__sub-subgrid {
+  grid-template-columns: 49.1% 49.1%;
+  grid-column-gap: 1.9%;
+}
+
+.pop-goods__item {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.pop-goods__name-container {
+  max-width: 69%;
+  margin-top: 22px;
+}
+
+.pop-goods__name {
+  margin: auto;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 105.5%;
+  font-weight: 600;
+  color: #272525;
+  text-align: center;
+}
+
 .page-footer {
   background: #f5f5f5;
 }
