@@ -167,10 +167,16 @@
         </div>
       </div>
       <img class="top-content__two-girls-img" src="./img/Two-girls.png" />
-      <picture>
-        <source srcset="./img/Pop-goods-busket.svg" type="image/svg" media="(max-width:450px)" />
-        <img class="top-content__busket" src="./img/Pop-goods-busket.svg" alt="Two boxes" />
-      </picture>
+      <button class="top-content__busket-btn btn" type="button">
+        <div class="top-content__busket">
+          <picture>
+            <source srcset="./img/Pop-goods-busket.svg" type="image/svg" media="(max-width:450px)" />
+            <img class="top-content__busket-img" src="./img/Pop-goods-busket.svg" alt="Two boxes" />
+          </picture>
+          <p class="top-content__busket-counter">3</p>
+          <p class="top-content__busket-price">375 грн</p>
+        </div>
+      </button>
     </div>
     <div class="page-mid-content">
       <div class="mid-content main-container">
@@ -186,40 +192,46 @@
         </div>
         <p class="mid-content__title-block-text">товары, которые наиболее часто заказывают наши клиенты</p>
         <div class="mid-content__goods-management goods-management">
-          <a class="goods-management__link" href="./">Продолжить покупки</a>
+          <button class="goods-management__btn btn" type="button">Продолжить покупки</button>
           <a class="goods-management__link" href="./">В корзину</a>
           <button class="goods-management__close-btn btn" type="button">
             <img src="./img/burger-menu_cancel.svg" alt="x" />
           </button>
         </div>
-        <img class="mid-content__busket" src="./img/Pop-goods-busket.svg" alt="busket" />
-        <div class="mid-content__pop-goods pop-goods">
-          <div class="pop-goods__item">
-            <img class="pop-goods__item-img" src="./img/Shoppers.png" alt="Shoppers" />
+        <button class="mid-content__busket-btn btn" type="button">
+          <div class="mid-content__busket">
+            <img class="mid-content__busket-img" src="./img/Pop-goods-busket.svg" alt="busket" />
+            <p class="mid-content__busket-counter">3</p>
+            <p class="mid-content__busket-price">375 грн</p>
           </div>
+        </button>
+        <div class="mid-content__pop-goods pop-goods">
+          <a class="pop-goods__item" href="./">
+            <img class="pop-goods__item-img" src="./img/Shoppers.png" alt="Shoppers" />
+          </a>
           <div class="pop-goods__subgrid">
-            <div class="pop-goods__item">
+            <a class="pop-goods__item" href="./">
               <img class="pop-goods__item-img" src="./img/Two cups.png" alt="Two cups" />
-            </div>
+            </a>
             <div class="pop-goods__sub-subgrid">
-              <div class="pop-goods__item">
+              <a class="pop-goods__item" href="./">
                 <img class="pop-goods__item-img" src="./img/Thermos.png" alt="Thermos" />
-              </div>
-              <div class="pop-goods__item">
+              </a>
+              <a class="pop-goods__item" href="./">
                 <img class="pop-goods__item-img" src="./img/Black cotton t-shirt.png" alt="Black cotton t-shirt" />
-              </div>
+              </a>
             </div>
           </div>
         </div>
         <div class="pop-goods__name-container">
-          <p class="pop-goods__name">Шопперы</p>
+          <a class="pop-goods__name" href="./">Шопперы</a>
         </div>
         <div class="mid-content__creative-block creative-block">
           <img class="creative-block__title" src="./img/Creative.png" alt="CREATIVE" />
           <h2 class="creative-block__main-question">Хотите удивить ваших коллег/партнеров необычными подарками?</h2>
           <p class="creative-block__text">Выбирайте готовые подарочные наборы или укажите критерии по которым мы соберем для Вас уникальный бокс.</p>
-          <button class="creative-block__btn btn" type="button">Перейти к наборам</button>
-          <button class="creative-block__btn btn" type="button">Создать свой</button>
+          <a class="creative-block__link" href="./">Перейти к наборам</a>
+          <a class="creative-block__link" href="./">Создать свой</a>
           <img class="creative-block__image" src="./img/Creative_set.png" alt="Set example">
           <picture>
             <source srcset="./img/Rectangle1920.svg" type="image/svg" media="(min-width:1501px)" />
