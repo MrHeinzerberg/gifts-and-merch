@@ -417,11 +417,6 @@ input[type="search"]::-webkit-search-results-decoration {
   right: 32px;
 }
 
-.mid-content__busket,
-.top-content__busket {
-  position: relative;
-}
-
 .mid-content__busket-counter,
 .top-content__busket-counter {
   position: absolute;
@@ -553,6 +548,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #fafafa;
   background-color: #272525;
   border-radius: 60px;
+  text-decoration: none;
 }
 
 .creative-block__link:last-of-type {
@@ -1480,12 +1476,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .footer__privacy-policy {
     margin-top: 23px;
-  }
-}
-
-@media (min-width: 451px) {
-  .top-content__busket {
-    display: none;
   }
 }
 
