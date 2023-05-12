@@ -573,6 +573,71 @@ input[type="search"]::-webkit-search-results-decoration {
   z-index: -1;
 }
 
+.mid-content__goods-on-order {
+  display: flex;
+  gap: 39px;
+  padding-top: 140px;
+}
+
+.goods-on-order__main-img {
+  width: 753px;
+  height: 532px;
+  border-radius: 15px;
+}
+
+.goods-on-order__title {
+  max-width: 826px;
+  margin: 47px 0 0 0;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 130%;
+  font-weight: 700;
+  color: #222227;
+}
+
+.goods-on-order__text {
+  max-width: 576px;
+  margin: 30px 0 41px 0;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 400;
+  letter-spacing: 0.065em;
+  color: #454747;
+}
+
+.goods-on-order__list {
+  display: flex;
+  gap: 53px;
+  margin-left: 16px;
+  list-style: none;
+}
+
+.goods-on-order__list-itam {
+  display: flex;
+  width: 133px;
+  height: 133px;
+  background: linear-gradient(38.95deg, #9796F0 -10.38%, #FFE0E8 107.56%);
+  box-shadow: 0px 16.0566px 20.0707px -4.01414px rgba(26, 32, 44, 0.1), 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04);
+  border-radius: 50%;
+}
+
+.goods-on-order__list-img {
+  object-fit: none;
+  object-position: left;
+}
+
+.goods-on-order__list-img:first-of-type {
+  margin-left: 4px;
+}
+
+.goods-on-order__slider {
+  right: -18px;
+  bottom: 77px;
+}
+
 .page-footer {
   background: #f5f5f5;
 }
@@ -926,6 +991,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .mid-content__creative-block {
     max-width: 723px;
     padding-top: 202px;
+    padding-bottom: 195px;
   }
 
   .creative-block__main-question {
@@ -946,6 +1012,31 @@ input[type="search"]::-webkit-search-results-decoration {
     top: 90px;
     left: -235px;
     height: 625px;
+  }
+
+  .mid-content__goods-on-order {
+    display: block;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0;
+  }
+
+  .goods-on-order__main-img {
+    width: 959px;
+    height: 531px;
+  }
+
+  .goods-on-order__title {
+    margin-top: 31px;
+  }
+
+  .goods-on-order__list {
+    margin: 0;
+  }
+
+  .goods-on-order__slider {
+    right: 174px;
+    bottom: 55px;
   }
 
   .footer {
@@ -1158,6 +1249,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .mid-content__creative-block {
     max-width: 511px;
     padding-top: 158px;
+    padding-bottom: 227px;
   }
 
   .creative-block__title {
@@ -1198,6 +1290,36 @@ input[type="search"]::-webkit-search-results-decoration {
     top: 20px;
     left: -600px;
     height: 515px;
+  }
+
+  .mid-content__goods-on-order {
+    max-width: 768px;
+    padding: 16px 0 55px 0;
+  }
+
+  .goods-on-order__main-img {
+    width: 728px;
+    height: 532px;
+  }
+
+  .goods-on-order__title {
+    max-width: 707px;
+    margin-top: 31px;
+    font-size: 24px;
+  }
+
+  .goods-on-order__text {
+    max-width: 661px;
+    margin: 19px 0 40px 0;
+  }
+
+  .goods-on-order__list {
+    gap: 66px;
+  }
+
+  .goods-on-order__slider {
+    right: 355px;
+    bottom: 1px;
   }
 
   .footer {
@@ -1422,6 +1544,39 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 392px;
   }
 
+  .mid-content__goods-on-order {
+    max-width: 480px;
+    padding: 120px 0 50px 0;
+  }
+
+  .goods-on-order__main-img {
+    width: 441px;
+    object-fit: cover;
+  }
+
+  .goods-on-order__text {
+    margin-bottom: 51px;
+  }
+
+  .goods-on-order__list {
+    gap: 40px;
+  }
+
+  .goods-on-order__list-itam {
+    width: 80px;
+    height: 80px;
+  }
+
+  .goods-on-order__list-img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .goods-on-order__slider {
+    right: 212px;
+    bottom: 44px;
+  }
+
   .footer {
     padding-top: 146px;
   }
@@ -1628,6 +1783,46 @@ input[type="search"]::-webkit-search-results-decoration {
     top: 565px;
     left: -465px;
     height: 392px;
+  }
+
+  .mid-content__goods-on-order {
+    max-width: 320px;
+    padding: 162px 0 40px 0;
+  }
+
+  .goods-on-order__main-img {
+    width: 280px;
+  }
+
+  .goods-on-order__title {
+    max-width: 281px;
+    margin-top: 22px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .goods-on-order__text {
+    margin-bottom: 35px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .goods-on-order__list {
+    gap: 26px;
+  }
+
+  .goods-on-order__list-itam {
+    width: 51px;
+    height: 51px;
+  }
+
+  .goods-on-order__list-img:first-of-type {
+    margin: 0;
+  }
+
+  .goods-on-order__slider {
+    right: 131px;
+    bottom: 40px;
   }
 
   .footer {
