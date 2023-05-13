@@ -326,6 +326,10 @@ input[type="search"]::-webkit-search-results-decoration {
   right: 231px;
 }
 
+.top-content__busket-btn {
+  display: none;
+}
+
 .mid-content {
   position: relative;
   padding-top: 40px;
@@ -635,7 +639,93 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .goods-on-order__slider {
   right: -18px;
-  bottom: 77px;
+  bottom: 836px;
+}
+
+.mid-content__your-ideas {
+  position: relative;
+  padding: 231px 0 110px 0;
+  z-index: 1;
+}
+
+.your-ideas__title {
+  max-width: 547px;
+  margin: 0;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 130%;
+  font-weight: 700;
+  color: #222227;
+  letter-spacing: 0.04em;
+}
+
+.your-ideas__text {
+  max-width: 552px;
+  margin: 17px 0 10px 0;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 400;
+  letter-spacing: 0.065em;
+  color: #454747;
+}
+
+.your-ideas__form-text {
+  max-width: 525px;
+  margin: 92px 0 34px 0;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  color: #222227;
+}
+
+.your-ideas__form-text span {
+  color: #1FAB8A;
+}
+
+.your-ideas__form {
+  display: flex;
+  gap: 74px;
+}
+
+.your-ideas__order-btn {
+  margin: -7px 0 0 26px;
+  padding: 19px 105px;
+  background-color: #1fab8a;
+}
+
+.your-ideas__lamp {
+  position: absolute;
+  top: 94px;
+  right: 186px;
+}
+
+.your-ideas__dark-rocket {
+  position: absolute;
+  top: 326px;
+  right: 737px;
+}
+
+.your-ideas__light-rocket {
+  position: absolute;
+  top: 127px;
+  right: -35px;
+}
+
+.your-ideas__squiggle {
+  position: absolute;
+  top: 488px;
+  right: 703px;
+}
+
+.your-ideas__pink-bg {
+  position: absolute;
+  right: -160px;
+  bottom: -62px;
 }
 
 .page-footer {
@@ -1634,6 +1724,12 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 }
 
+@media (min-width: 451px) {
+  .top-content__busket {
+    display: none;
+  }
+}
+
 @media (max-width: 450px) {
   .top-header {
     height: 50px;
@@ -1699,6 +1795,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .top-content__busket-btn {
     position: absolute;
+    display: block;
     right: 22px;
     bottom: 22px;
   }

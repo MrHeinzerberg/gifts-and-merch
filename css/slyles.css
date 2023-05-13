@@ -363,16 +363,19 @@
   margin-left: 88px;
 }
 
-.creative-block__input {
+.creative-block__input,
+.your-ideas__input {
   display: block;
   flex-basis: 100%;
+  max-height: 27px;
   max-inline-size: 336px;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #272525;
 }
 
-.creative-block__input::placeholder {
+.creative-block__input::placeholder,
+.your-ideas__input::placeholder {
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -381,7 +384,8 @@
   color: #454747;
 }
 
-.creative-block__order-btn {
+.creative-block__order-btn,
+.your-ideas__order-btn {
   margin-top: 4px;
   padding: 19px 105px;
   font-family: "Montswrrat", sans-serif;
