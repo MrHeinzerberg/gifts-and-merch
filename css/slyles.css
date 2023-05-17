@@ -239,7 +239,9 @@
 }
 
 .navigation__btn-left,
-.navigation__btn-right {
+.our-partners__btn-left,
+.navigation__btn-right,
+.our-partners__btn-right {
   width: 40px;
   height: 40px;
   background: #ece7f0;
