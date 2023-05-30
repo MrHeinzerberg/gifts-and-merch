@@ -15,7 +15,9 @@
 }
 
 .top-content__main-or-sets,
-.main-or-sets__btn {
+.main-or-sets__btn,
+.top-content__main-or-sets-btn,
+.top-content__main-or-info {
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -25,7 +27,8 @@
 }
 
 .main-or-sets__btn--active,
-.top-content__main-or-sets {
+.top-content__main-or-sets,
+.top-content__main-or-sets-btn--active {
   color: #524983;
 }
 
@@ -293,7 +296,8 @@
   width: calc(33% - 96px);
 }
 
-.information-on-sets__title {
+.information-on-sets__title,
+.info__title {
   margin: 0;
   font-family: "Gilroy", sans-serif;
   font-style: normal;
@@ -303,7 +307,8 @@
   color: #272525;
 }
 
-.information-on-sets__text {
+.information-on-sets__text,
+.info__text {
   margin: 20px 0 0 0;
   font-family: "Gilroy", sans-serif;
   font-style: normal;
