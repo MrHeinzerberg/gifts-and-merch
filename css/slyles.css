@@ -344,7 +344,8 @@
   color: #454747;
 }
 
-.creative-block__text {
+.creative-block__text,
+.contacts__text {
   max-width: 300px;
   margin: 0;
   font-family: "Gilroy", sans-serif;
@@ -355,7 +356,8 @@
   color: #222227;
 }
 
-.creative-block__text span {
+.creative-block__text span,
+.contacts__text span {
   color: #1fab8a;
 }
 

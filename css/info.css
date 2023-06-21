@@ -138,6 +138,90 @@
   right: -35px;
 }
 
+.mid-content__contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 108px;
+  text-align: unset;
+}
+
+.contacts__our-contacts {
+  max-width: 360px;
+  padding-left: 7px;
+}
+
+.contacts__title {
+  position: relative;
+  margin: 0;
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 103%;
+  font-weight: 700;
+  color: #272525;
+}
+
+.contacts__phone-img {
+  position: absolute;
+  top: -1px;
+  left: 237px;
+}
+
+.contacts__email {
+  margin: 51px 0 25px 0;
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 103%;
+  font-weight: 600;
+  color: #272525;
+  text-align: unset;
+  text-decoration-line: none;
+}
+
+.contacts__number-link {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 37px;
+  font-weight: 800;
+  color: #272525;
+  text-decoration-line: none;
+}
+
+.contacts__messengers {
+  margin: 3px 0 0 1px;
+  list-style-type: none;
+}
+
+.contacts__telegram {
+  margin: 0 13px;
+}
+
+.contacts_feedback-container {
+  display: flex;
+  margin-right: 204px;
+}
+
+.contacts_feedback {
+  width: 411px;
+  margin-right: -22px;
+}
+
+.contacts__text {
+  margin-top: 52px;
+}
+
+.creative-block__form {
+  max-width: 336px;
+  margin: 103px 22px 0px 0px;
+}
+
+.footer {
+  padding-top: 195px;
+}
 
 @media (max-width: 1500px) {
   .top-content {
@@ -208,6 +292,30 @@
   .faq_img {
     display: none;
   }
+
+  .mid-content__contacts {
+    margin-top: 90px;
+  }
+
+  .contacts__our-contacts {
+    padding-left: 3px;
+  }
+
+  .mid-content__contacts {
+    display: block;
+  }
+
+  .contacts_feedback-container {
+    margin: 92px 0 0 0;
+  }
+
+.creative-block__form {
+  margin: 101px 0px 0px 0px;
+  }
+
+  .footer {
+    padding-top: 175px;
+  }
 }
 
 @media (max-width: 999px) {
@@ -277,6 +385,54 @@
   .faq__decorative-line {
     margin-bottom: 51px;
   }
+
+  .mid-content__contacts {
+    margin-top: 73px;
+  }
+
+  .contacts__our-contacts {
+    padding: 0;
+  }
+
+  .contacts__title {
+    font-size: 36px;
+  }
+
+  .contacts__phone-img {
+    top: -7px;
+    left: 186px;
+    width: 35px;
+    height: 41px;
+  }
+
+  .contacts__email {
+    margin: 38px 0 11px 0;
+    font-size: 28px;
+  }
+
+  .contacts__number-link {
+    font-size: 28px;
+  }
+
+  .contacts__messengers {
+    margin: 8px 0 0 4px;
+  }
+
+  .contacts_feedback-container {
+    margin-top: 87px;
+  }
+
+  .contacts__text {
+    margin-top: 31px;
+  }
+
+  .creative-block__form {
+    margin-top: 68px;
+  }
+
+  .footer {
+    padding-top: 110px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -337,6 +493,27 @@
 
   .faq__decorative-line {
     margin-bottom: 38px;
+  }
+
+  .mid-content__contacts {
+    margin-top: 50px;
+  }
+
+  .contacts_feedback-container {
+    display: block;
+    margin-top: 42px;
+  }
+
+  .creative-block__form {
+    margin-top: 30px;
+  }
+
+  .creative-block__order-btn {
+    padding: 19px 133px;
+  }
+
+  .footer {
+    padding-top: 116px;
   }
 }
 
@@ -417,5 +594,72 @@
 
   .faq__decorative-line {
     margin-bottom: 30px;
+  }
+
+  .mid-content__contacts {
+    margin-top: 48px;
+  }
+
+  .contacts__title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .contacts__phone-img {
+    left: 213px;
+  }
+
+  .contacts__email {
+    margin: 47px 0 4px 0;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .contacts__number-link {
+    max-width: 191px;
+    margin: 0 auto 6px auto;
+    font-size: 24px;
+  }
+
+  .contacts__messengers {
+    max-width: 111px;
+    margin: auto;
+  }
+
+  .contacts__telegram {
+    margin: 0 18px;
+  }
+
+  .contacts__messengers-icon {
+    width: 22px;
+    height: 24px;
+  }
+
+  .contacts_feedback-container {
+    margin-top: 58px;
+  }
+
+  .contacts_feedback {
+    width: 278px;
+  }
+
+  .contacts__text {
+    max-width: 243px;
+    margin: 20px auto 0 auto;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .creative-block__form {
+    margin-top: 42px;
+  }
+
+  .creative-block__order-btn {
+    padding: 19px 105px;
+  }
+
+  .footer {
+    padding-top: 90px;
   }
 }
