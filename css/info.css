@@ -35,6 +35,12 @@
   right: 88px;
 }
 
+.top-content__wave {
+  right: -30px;
+  bottom: -48px;
+  transform: scale(-1.1,0.9);
+}
+
 .mid-content {
   padding-top: 5px;
 }
@@ -73,9 +79,26 @@
   color: #272525;
 }
 
-.faq__btn {
-  height: 41px;
+.faq__decorative-line h3 {
+  font-weight: 600;
+  color: #272525;
+}
+
+.faq__decorative-line p ul {
+  display: none;
+}
+
+.faq__decorative-line--acrive h3 {
+  font-weight: 700;
+  color: #3C336C;
+}
+
+.faq__decorative-line--acrive img {
   transform: rotate(180deg);
+}
+
+.faq__decorative-line--acrive p ul {
+  display: block;
 }
 
 .faq__subtitle-block {
@@ -84,18 +107,21 @@
 }
 
 .faq__subtitle {
+  position: relative;
+  width: 100%;
   margin: 0 0 20px 0;
   font-family: 'Gilroy', sans-serif;
   font-style: normal;
   font-size: 36px;
   line-height: 130%;
-  font-weight: 700;
-  color: #272525;
 }
 
-.faq__subtitle--active {
-    color: #3C336C;
-  }
+.faq__arrow {
+  position: absolute;
+  top: 16px;
+  right: 0px;
+  cursor: pointer;
+}
 
 .faq__sublist {
   margin: 0;
@@ -253,6 +279,12 @@
     height: 680px;
   }
 
+  .top-content__wave {
+    right: -480px;
+    bottom: -60px;
+    transform: scale(-0.6,0.9);
+  }
+
   .mid-content {
     padding-top: 10px;
   }
@@ -315,6 +347,12 @@
   margin: 101px 0px 0px 0px;
   }
 
+  .page-footer__wave {
+    top: -15px;
+    right: -460px;
+    transform: scale(-0.55,-0.8);
+  }
+
   .footer {
     padding-top: 175px;
   }
@@ -348,6 +386,12 @@
     right: -310px;
     width: 702px;
     height: 462px;
+  }
+
+  .top-content__wave {
+    right: -560px;
+    bottom: -57px;
+    transform: scale(0.5,0.9);
   }
 
   .mid-content {
@@ -435,6 +479,12 @@
     margin-top: 68px;
   }
 
+  .page-footer__wave {
+    top: -30px;
+    right: -580px;
+    transform: scale(-0.43,-0.58);
+  }
+
   .footer {
     padding-top: 110px;
   }
@@ -475,12 +525,23 @@
     height: 334px;
   }
 
+  .top-content__wave {
+    right: -720px;
+    bottom: 118px;
+    transform: scale(-0.26,0.4);
+}
+
+.top-content__one-more-thing {
+  position: absolute;
+  bottom: 0px;
+  right: -310px;
+  display: block;
+  height: 180px;
+  z-index: inherit;
+}
+
   .mid-content {
     padding-top: 51px;
-  }
-
-  .info__list {
-    max-width: 419px;
   }
 
   .info__list-itam {
@@ -489,11 +550,6 @@
 
   .mid-content__faq {
     padding-top: 34px;
-  }
-
-  .faq__main-list {
-    max-width: 437px;
-
   }
 
   .faq__decorative-line {
@@ -521,6 +577,12 @@
     padding: 19px 133px;
   }
 
+  .page-footer__wave {
+    top: -22px;
+    right: -727px;
+    transform: scale(-0.26,-0.8);
+  }
+
   .footer {
     padding-top: 116px;
   }
@@ -536,9 +598,9 @@
   }
 
   .top-content__title {
-    max-width: 242px;
+    max-width: 225px;
     margin: 0 auto 0 auto;
-    font-size: 28px;
+    font-size: 26px;
     text-align: center;
   }
 
@@ -555,6 +617,12 @@
     height: 279px;
   }
 
+  .top-content__wave {
+    right: -840px;
+    bottom: -37px;
+    transform: scale(-0.25,0.5);
+}
+
   .mid-content {
     padding-top: 8px;
   }
@@ -569,15 +637,19 @@
   }
 
   .mid-content__faq {
-    padding-top: 7px;
+    padding-top: 27px;
   }
 
   .faq__title {
     font-size: 28px;
   }
 
-  .faq__main-list {
-    max-width: 280px;
+  .faq__decorative-line h3 {
+    font-size: 24px;
+  }
+
+  .faq__decorative-line--acrive h3 {
+    font-size: 28px;
   }
 
   .faq__subtitle-block {
@@ -585,19 +657,14 @@
     justify-content: center;
   }
 
-  .faq__btn {
+  .faq__arrow {
     position: absolute;
-    top: 0px;
+    top: 15px;
     right: 2px;
   }
 
   .faq__subtitle {
-    font-size: 24px;
     text-align: center;
-  }
-
-  .faq__subtitle--active {
-    font-size: 28px;
   }
 
   .faq__decorative-line,
@@ -606,13 +673,13 @@
   }
 
   .mid-content__contacts {
-    margin-top: 48px;
+    max-width: 280px;
+    margin: 48px auto 0 auto;
   }
 
   .contacts__title {
     max-width: 280px;
     margin: auto;
-    padding-right: 14px;
     font-size: 28px;
     text-align: center;
   }
@@ -656,10 +723,6 @@
     width: 278px;
   }
 
-  .contacts__title {
-    padding-right: 0;
-  }
-
   .contacts__text {
     max-width: 243px;
     margin: 20px auto 0 auto;
@@ -676,7 +739,13 @@
     padding: 19px 105px;
   }
 
+  .page-footer__wave {
+    top: -12px;
+    right: -917px;
+    transform: scale(-0.3,-0.9);
+}
+
   .footer {
-    padding-top: 90px;
+    padding-top: 130px;
   }
 }
