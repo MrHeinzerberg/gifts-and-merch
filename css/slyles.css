@@ -467,9 +467,9 @@
   }
 
   .top-content__wave {
-    right: -450px;
-    bottom: -54px;
-    transform: scale(-0.55,1.1);
+    right: -230px;
+    bottom: -51px;
+    transform: scale(-0.81,1.1);
 }
 
   .mid-content__cards {
@@ -610,9 +610,9 @@
   }
 
   .page-footer__wave {
-    top: -60px;
-    right: -460px;
-    transform: scale(-0.55,-0.8);
+    top: -59px;
+    right: -180px;
+    transform: scale(-0.81,-0.8);
   }
 
   .footer {
@@ -652,9 +652,9 @@
   }
 
   .top-content__wave {
-    right: -580px;
+    right: -500px;
     bottom: -58px;
-    transform: scale(-0.43,0.7);
+    transform: scale(-0.6,0.7);
 }
 
   .mid-content {
@@ -791,8 +791,8 @@
 
   .page-footer__wave {
     top: -43px;
-    right: -590px;
-    transform: scale(-0.43,-0.5);
+    right: -460px;
+    transform: scale(-0.53,-0.5);
 }
 
   .footer {
@@ -837,9 +837,9 @@
   }
 
   .top-content__wave {
-    right: -710px;
+    right: -630px;
     bottom: -63px;
-    transform: scale(-0.27,0.5);
+    transform: scale(-0.35,0.5);
 }
 
   .mid-content {
@@ -1003,8 +1003,8 @@
 
   .page-footer__wave {
     top: -33px;
-    right: -725px;
-    transform: scale(-0.26,-0.65);
+    right: -633px;
+    transform: scale(-0.34,-0.65);
 }
 
   .footer {
@@ -1050,9 +1050,9 @@
   }
 
   .top-content__wave {
-    right: -850px;
-    bottom: -62px;
-    transform: scale(-0.28,0.9);
+    right: -735px;
+    bottom: -55px;
+    transform: scale(-0.25,0.9);
     z-index: -1;
 }
 
@@ -1222,8 +1222,8 @@
 
   .page-footer__wave {
     top: -43px;
-    right: -886px;
-    transform: scale(-0.26,-0.6);
+    right: -735px;
+    transform: scale(-0.24,-0.6);
 }
 
   .footer {
