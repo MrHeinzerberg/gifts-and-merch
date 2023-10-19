@@ -75,8 +75,6 @@
   font-style: normal;
   font-size: 48px;
   line-height: 105.5%;
-  font-weight: 700;
-  color: #272525;
 }
 
 .faq__subtitle {
@@ -100,11 +98,11 @@
   color: #3C336C;
 }
 
-.faq__decorative-line--acrive .faq__arrow{
+.faq__decorative-line--active .faq__arrow{
   transform: rotate(180deg);
 }
 
-.faq__content {
+.faq__decorative-line--active .faq__content {
   display: block;
 }
 
