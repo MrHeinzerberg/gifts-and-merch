@@ -588,8 +588,9 @@
   }
 
   .top-content__wave {
-    right: -730px;
+    right: -740px;
     bottom: -37px;
+    left: auto;
     transform: scale(-0.24,0.5);
 }
 

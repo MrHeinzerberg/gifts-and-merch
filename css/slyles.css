@@ -467,7 +467,7 @@
   }
 
   .top-content__wave {
-    right: -230px;
+    right: -190px;
     bottom: -51px;
     transform: scale(-0.81,1.1);
 }
@@ -837,7 +837,7 @@
   }
 
   .top-content__wave {
-    right: -630px;
+    right: -625px;
     bottom: -63px;
     transform: scale(-0.35,0.5);
 }
@@ -1052,6 +1052,7 @@
   .top-content__wave {
     right: -735px;
     bottom: -55px;
+    left: auto;
     transform: scale(-0.25,0.9);
     z-index: -1;
 }

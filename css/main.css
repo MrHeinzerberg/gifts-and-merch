@@ -1110,9 +1110,9 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .top-content__wave {
-    right: -500px;
+    right: -200px;
     bottom: -60px;
-    transform: scale(-0.6,0.3);
+    transform: scale(-0.8,0.3);
   }
 
   .mid-content {
@@ -1446,9 +1446,9 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .top-content__wave {
-    right: -550px;
+    right: -450px;
     bottom: -64px;
-    transform: scale(-0.43,0.5);
+    transform: scale(-0.55,0.5);
   }
 
   .mid-content {
