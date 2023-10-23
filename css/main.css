@@ -183,6 +183,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #fafbfd;
   background: #272525;
   box-shadow: 0 16.06px 20.07px -4.01px rgba(26, 32, 44, 0.1), 0px 8.03px 8.03px -4.01px rgba(26, 32, 44, 0.04);
+  cursor: default;
 }
 
 .menu__link--active::after {
