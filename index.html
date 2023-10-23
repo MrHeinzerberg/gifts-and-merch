@@ -34,13 +34,13 @@
           <nav class="menu__nav">
             <ul class="menu__list">
               <li>
-                <a class="menu__link" href="/sets">Наборы</a>
+                <a class="menu__link menu__link--active">Все товары</a>
               </li>
               <li>
-                <a class="menu__link menu__link--active" href="/all-goods">Все товары</a>
+                <a class="menu__link" href="/sets.html">Наборы</a>
               </li>
               <li>
-                <a class="menu__link" href="/information">Информация</a>
+                <a class="menu__link" href="/info.html">Информация</a>
               </li>
             </ul>
           </nav>
@@ -167,6 +167,7 @@
         </div>
       </div>
       <img class="top-content__two-girls-img" src="./img/Two-girls.png" />
+      <img class="top-content__wave" src="./img/header-wave.svg" />
       <button class="top-content__busket-btn btn" type="button">
         <picture>
           <source srcset="./img/Pop-goods-busket.svg" type="image/svg" media="(max-width:450px)" />
@@ -240,9 +241,105 @@
             <img class="creative-block__decorative-shadow" src="./img/Rectangle1920.svg" alt="Decorative shadow" />
           </picture>
         </div>
+        <div class="mid-content__goods-on-order goods-on-order">
+          <img class="goods-on-order__main-img" src="./img/sweater.jpg" />
+          <div>
+            <h3 class="goods-on-order__title">
+              Помимо готовой продукции высокого качества, мы можем для Вас произвести одежду, аксессуры, вкусности и другое под заказ.
+            </h3>
+            <p class="goods-on-order__text">
+              Благодаря личному производству мы изготавливаем большие партии в короткие сроки, а так же у Вас всегда есть возможность
+              кастомизировать изделия.
+            </p>
+            <lu class="goods-on-order__list">
+              <li>
+                <a class="goods-on-order__list-itam">
+                  <img class="goods-on-order__list-img" src="./img/Mask.png" />
+                </a>
+              </li>
+              <li>
+                <a class="goods-on-order__list-itam">
+                  <img class="goods-on-order__list-img" src="./img/Bages.png" />
+                </a>
+              </li>
+              <li>
+                <a class="goods-on-order__list-itam">
+                  <img class="goods-on-order__list-img" src="./img/Dried fruits.png" />
+                </a>
+              </li>
+              <li>
+                <a class="goods-on-order__list-itam">
+                  <img class="goods-on-order__list-img" src="./img/Bottle.png" />
+                </a>
+              </li>
+            </lu>
+            <div class="goods-on-order__slider">
+              <button class="btn" type="button">
+                <img class="goods-on-order__slider-arrow" src="./img/Arrow.svg" alt="left" />
+              </button>
+              <p class="goods-on-order__counter">1/7</p>
+              <button class="btn" type="button">
+                <img class="goods-on-order__slider-arrow goods-on-order__slider-arrow--rotate180" src="./img/Arrow.svg" alt="right" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="mid-content__your-ideas your-ideas">
+          <div>
+            <h3 class="your-ideas__title">У вас своя УНИКАЛЬНАЯ идея по разработке мерча?</h3>
+            <p class="your-ideas__text">
+              Изготовим мерч по вашему дизайну. Расскажем лайфхаки и ознакомим с технологией производства, предоставим образцы матералов.
+            </p>
+          </div>
+          <div class="your-ideas__block-form">
+            <p class="your-ideas__form-text">
+              Введите свои контактные данные, и наш менеджер свяжется с Вами <span>в течении 15 минут</span>
+            </p>
+            <form class="your-ideas__form">
+              <input class="your-ideas__input" type="text" placeholder="Ваше Имя" />
+              <input class="your-ideas__input" type="email" placeholder="Ваша электронная  почта" />
+              <input class="your-ideas__input" type="tel" placeholder="Ваш номер телефона" />
+              <button class="your-ideas__order-btn btn" type="button">Заказать</button>
+            </form>
+          </div>
+          <img class="your-ideas__lamp" src="./img/Lamp.svg" />
+          <img class="your-ideas__dark-rocket" src="./img/Dark rocket.svg" />
+          <img class="your-ideas__light-rocket" src="./img/Light rocket.svg" />
+          <img class="your-ideas__squiggle" src="./img/Squiggle.svg" />
+        </div>
+        <img class="your-ideas__pink-bg" src="./img/Pink bg.svg" />
+        <div class="mid-content__our-partners our-partners">
+          <h2 class="our-partners__title">С нами соотрудничают</h2>
+          <div class="our-partners__container">
+            <button class="our-partners__btn-left btn" type="button">
+              <img class="our-partners__btn-img" src="./img/Arrow.svg" alt="left" />
+            </button>
+            <ul class="our-partners__list">
+              <li class="our-partners__logo">
+                <img class="our-partners__img" src="./img/Logo_NIKE.svg" />
+              </li>
+              <li class="our-partners__logo">
+                <img class="our-partners__img" src="./img/Logo_Coca-Cola.svg" />
+              </li>
+              <li class="our-partners__logo">
+                <img src="./img/Logo_Atlas-Weekend.svg" />
+              </li>
+              <li class="our-partners__logo">
+                <img src="./img/Logo_Megogo.svg" />
+              </li>
+              <li class="our-partners__logo">
+                <img src="./img/Logo_ Crazy-Box.svg" />
+              </li>
+            </ul>
+            <button class="our-partners__btn-right btn" type="button">
+              <img class="our-partners__btn-img" src="./img/Arrow.svg" alt="right" />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="page-footer">
+      <img class="page-footer__wave" src="./img/header-wave.svg" />
       <div class="footer main-container">
         <div class="footer__item">
           <a class="footer__logo-link" href="/">

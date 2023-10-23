@@ -1,0 +1,720 @@
+.page-top-content {
+  overflow: hidden;
+}
+
+.top-content__who-are-we {
+  max-width: 726px;
+}
+
+.top-content__title {
+  font-size: 45px;
+}
+.top-content__text {
+  max-width: 726px;
+  margin-bottom: 74px;
+}
+
+.top-content__list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.top-content__link {
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 105.5%;
+  font-weight: 600;
+  color: #3C336C;
+}
+
+.top-content__main-img {
+  position: absolute;
+  top: -30px;
+  right: 88px;
+}
+
+.top-content__wave {
+  right: -30px;
+  bottom: -48px;
+  transform: scale(-1.1,0.9);
+}
+
+.mid-content {
+  padding-top: 5px;
+}
+
+.info__list {
+  padding: 0;
+  list-style: none;
+}
+
+.info__list-itam {
+  margin-bottom: 38px;
+}
+
+.info__text:nth-last-of-type(3) {
+  color: #524983;
+}
+
+.mid-content__faq {
+  padding-top: 70px;
+}
+
+.faq__main-list {
+  max-width: 853px;
+  margin: 30px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq__title {
+  margin: 0;
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 105.5%;
+}
+
+.faq__subtitle {
+  position: relative;
+  width: 100%;
+  margin: 0 0 20px 0;
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 130%;
+  font-weight: 600;
+  color: #272525;
+}
+
+.faq__content {
+  display: none;
+}
+
+.faq__decorative-line--active .faq__subtitle {
+  font-weight: 700;
+  color: #3C336C;
+}
+
+.faq__decorative-line--active .faq__arrow{
+  transform: rotate(180deg);
+}
+
+.faq__decorative-line--active .faq__content {
+  display: block;
+}
+
+.faq__arrow {
+  position: absolute;
+  top: 16px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.faq__sublist {
+  margin: 0;
+  padding-left: 25px;
+  list-style: disc;
+}
+
+.faq__sublist--last {
+  padding-left: 7px;
+  list-style: none;
+}
+
+.faq__sublist--last li::before {
+  content: "—";
+  position: relative;
+  left: -6px;
+}
+
+.faq__text {
+  margin: 0;
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  color: #454747;
+}
+
+.faq__decorative-line {
+  padding: 30px 0 20px 0;
+  border-bottom: 8px solid #F1F0F8;
+}
+
+.faq_img {
+  position: absolute;
+  top: 542px;
+  right: -35px;
+}
+
+.mid-content__contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 108px;
+  text-align: unset;
+}
+
+.contacts__our-contacts {
+  max-width: 360px;
+  padding-left: 7px;
+}
+
+.contacts__title {
+  position: relative;
+  margin: 0;
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 103%;
+  font-weight: 700;
+  color: #272525;
+}
+
+.contacts__phone-img {
+  position: absolute;
+  top: -1px;
+  left: 237px;
+}
+
+.contacts__email {
+  margin: 51px 0 25px 0;
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 103%;
+  font-weight: 600;
+  color: #272525;
+  text-align: unset;
+  text-decoration-line: none;
+}
+
+.contacts__number-link {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 37px;
+  font-weight: 800;
+  color: #272525;
+  text-decoration-line: none;
+}
+
+.contacts__messengers {
+  margin: 3px 0 0 1px;
+  font-size: 0;
+  list-style-type: none;
+}
+
+.contacts__telegram {
+  margin: 0 13px;
+}
+
+.contacts_feedback-container {
+  display: flex;
+  margin-right: 204px;
+}
+
+.contacts_feedback {
+  width: 411px;
+  margin-right: -22px;
+}
+
+.contacts__text {
+  margin-top: 52px;
+}
+
+.creative-block__form {
+  max-width: 336px;
+  margin: 103px 22px 0px 0px;
+}
+
+.footer {
+  padding-top: 195px;
+}
+
+@media (max-width: 1500px) {
+  .top-content {
+    padding-top: 69px;
+    }
+
+  .top-content__who-are-we {
+    max-width: 542px;
+  }
+
+  .top-content__main-or-info {
+    display: none;
+  }
+
+  .top-content__text {
+    margin-bottom: 42px;
+    font-size: 16px;
+    letter-spacing: 0em;
+  }
+
+  .top-content__list {
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 280px;
+  }
+
+  .top-content__main-img {
+    top: -60px;
+    right: -529px;
+    width: 1027px;
+    height: 680px;
+  }
+
+  .top-content__wave {
+    right: -185px;
+    bottom: -60px;
+    transform: scale(-0.81,0.9);
+  }
+
+  .mid-content {
+    padding-top: 10px;
+  }
+
+  .info__list {
+    max-width: 785px;
+    margin: 0;
+  }
+
+  .info__list-itam {
+    margin-bottom: 40px;
+  }
+
+  .mid-content__faq {
+    padding-top: 53px;
+  }
+
+  .faq__main-list {
+    max-width: 958px;
+    margin-top: 1px;
+  }
+
+  .faq__decorative-line {
+    padding-top: 36px;
+  }
+
+  .faq_img {
+    display: none;
+  }
+
+  .mid-content__contacts {
+    margin-top: 89px;
+  }
+
+  .contacts__our-contacts {
+    padding-left: 3px;
+  }
+
+  .mid-content__contacts {
+    display: block;
+  }
+
+  .contacts_feedback-container {
+    margin: 97px 0 0 0;
+  }
+
+.creative-block__form {
+  margin: 101px 0px 0px 0px;
+  }
+
+  .page-footer__wave {
+    top: -15px;
+    right: -210px;
+    transform: scale(-0.78,-0.8);
+  }
+
+  .footer {
+    padding-top: 175px;
+  }
+}
+
+@media (max-width: 999px) {
+  .page-top-content {
+    margin-bottom: 0;
+  }
+  .top-content {
+    padding-top: 29px;
+  }
+
+  .top-content__who-are-we {
+    max-width: 389px;
+    padding-left: 1px;
+  }
+
+  .top-content__title {
+    max-width: 298px;
+    font-size: 36px;
+  }
+
+  .top-content__text {
+    margin-bottom: 45px;
+    line-height: 132%;
+  }
+
+  .top-content__main-img {
+    top: -2px;
+    right: -310px;
+    width: 702px;
+    height: 462px;
+  }
+
+  .top-content__wave {
+    right: -530px;
+    bottom: -57px;
+    transform: scale(0.6,0.9);
+  }
+
+  .mid-content {
+    padding-top: 60px;
+  }
+
+  .info__list {
+    max-width: 695px;
+  }
+
+  .info__title {
+    font-size: 28px;
+  }
+
+  .info__list-itam {
+    margin-bottom: 62px;
+  }
+
+  .mid-content__faq {
+    padding-top: 24px;
+  }
+
+  .faq__main-list {
+    max-width: 727px;
+  }
+
+  .faq__title {
+    font-size: 36px;
+  }
+
+  .faq__subtitle {
+    margin: 0 0 20px 0;
+    font-size: 28px;
+  }
+
+  .faq__decorative-line {
+    padding-top: 34px;
+  }
+
+  .mid-content__contacts {
+    margin-top: 73px;
+  }
+
+  .contacts__our-contacts {
+    padding: 0;
+  }
+
+  .contacts__title {
+    font-size: 36px;
+  }
+
+  .contacts__phone-img {
+    top: -7px;
+    left: 186px;
+    width: 35px;
+    height: 41px;
+  }
+
+  .contacts__email {
+    margin: 38px 0 11px 0;
+    font-size: 28px;
+  }
+
+  .contacts__number-link {
+    font-size: 28px;
+  }
+
+  .contacts__messengers {
+    margin: 8px 0 0 4px;
+  }
+
+  .contacts_feedback-container {
+    margin-top: 90px;
+  }
+
+  .contacts__text {
+    margin-top: 31px;
+  }
+
+  .creative-block__form {
+    margin-top: 68px;
+  }
+
+  .page-footer__wave {
+    top: -30px;
+    right: -460px;
+    transform: scale(-0.52,-0.58);
+  }
+
+  .footer {
+    padding-top: 110px;
+  }
+}
+
+@media (max-width: 650px) {
+  .page-top-content {
+    height: 590px;
+  }
+
+  .top-content {
+    padding-top: 22px;
+  }
+
+  .top-content__who-are-we {
+    padding-left: 0px;
+  }
+
+  .top-content__title {
+    max-width: 283px;
+    font-size: 34px;
+  }
+
+  .top-content__text {
+    margin-top: 340px;
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  .top-content__list {
+    display: none;
+  }
+
+  .top-content__main-img {
+    top: 75px;
+    right: -3px;
+    width: 507px;
+    height: 334px;
+  }
+
+  .top-content__wave {
+    right: -720px;
+    bottom: 117px;
+    transform: scale(-0.44,0.5);
+}
+
+  .top-content__one-more-thing {
+  position: absolute;
+  bottom: 0px;
+  right: -280px;
+  display: block;
+  height: 187px;
+  z-index: inherit;
+  }
+
+  .mid-content {
+    padding-top: 51px;
+  }
+
+  .info__list-itam {
+    margin-bottom: 50px;
+  }
+
+  .mid-content__faq {
+    padding-top: 34px;
+  }
+
+  .faq__decorative-line {
+    padding-top: 30px;
+  }
+
+  .mid-content__contacts {
+    margin-top: 50px;
+  }
+
+  .contacts_feedback-container {
+    display: block;
+    margin-top: 45px;
+  }
+
+  .creative-block__form {
+    margin-top: 30px;
+  }
+
+  .creative-block__order-btn {
+    padding: 19px 133px;
+  }
+
+  .page-footer__wave {
+    top: -22px;
+    right: -635px;
+    transform: scale(-0.34,-0.8);
+  }
+
+  .footer {
+    padding-top: 116px;
+  }
+}
+
+@media (max-width: 450px) {
+  .page-top-content {
+    height: 632px;
+  }
+
+  .top-content {
+    padding-top: 33px;
+  }
+
+  .top-content__title {
+    max-width: 225px;
+    margin: 0 auto 0 auto;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .top-content__text {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 127%;
+  }
+
+  .top-content__main-img {
+    top: 326px;
+    right: -84px;
+    width: 425px;
+    height: 279px;
+  }
+
+  .top-content__wave {
+    right: -740px;
+    bottom: -37px;
+    left: auto;
+    transform: scale(-0.24,0.5);
+}
+
+  .top-content__one-more-thing {
+  display: none;
+  }
+
+  .mid-content {
+    padding-top: 8px;
+  }
+
+  .info__text {
+    font-size: 15px;
+    line-height: 125%;
+  }
+
+  .info__list-itam {
+    margin-bottom: 55px;
+  }
+
+  .mid-content__faq {
+    padding-top: 27px;
+  }
+
+  .faq__title {
+    font-size: 28px;
+  }
+
+  .faq__subtitle {
+    font-size: 24px;
+  }
+
+  .faq__decorative-line--active .faq__subtitle {
+    font-size: 28px;
+  }
+
+  .faq__arrow {
+    position: absolute;
+    top: 15px;
+    right: 2px;
+  }
+
+  .faq__subtitle {
+    text-align: center;
+  }
+
+  .faq__decorative-line {
+    padding-top: 32px;
+  }
+
+  .mid-content__contacts {
+    max-width: 280px;
+    margin: 48px auto 0 auto;
+  }
+
+  .contacts__title {
+    max-width: 280px;
+    margin: auto;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .contacts__phone-img {
+    left: 206px;
+  }
+
+  .contacts__email {
+    margin: 47px 0 4px 0;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .contacts__number-link {
+    display: block;
+    max-width: 191px;
+    margin: 0 auto 6px auto;
+    font-size: 24px;
+  }
+
+  .contacts__messengers {
+    max-width: 111px;
+    margin: auto;
+  }
+
+  .contacts__telegram {
+    margin: 0 22px;
+  }
+
+  .contacts__messengers-icon {
+    width: 22px;
+    height: 24px;
+  }
+
+  .contacts_feedback-container {
+    margin-top: 62px;
+  }
+
+  .contacts_feedback {
+    width: 278px;
+  }
+
+  .contacts__text {
+    max-width: 243px;
+    margin: 20px auto 0 auto;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .creative-block__form {
+    margin-top: 42px;
+  }
+
+  .creative-block__order-btn {
+    padding: 19px 105px;
+  }
+
+  .page-footer__wave {
+    top: -12px;
+    right: -730px;
+    transform: scale(-0.24,-0.9);
+}
+
+  .footer {
+    padding-top: 130px;
+  }
+}

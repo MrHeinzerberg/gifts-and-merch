@@ -15,7 +15,9 @@
 }
 
 .top-content__main-or-sets,
-.main-or-sets__btn {
+.main-or-sets__btn,
+.top-content__main-or-sets-btn,
+.top-content__main-or-info {
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -25,7 +27,8 @@
 }
 
 .main-or-sets__btn--active,
-.top-content__main-or-sets {
+.top-content__main-or-sets,
+.top-content__main-or-sets-btn--active {
   color: #524983;
 }
 
@@ -78,6 +81,12 @@
   top: -57px;
 }
 
+.top-content__wave {
+  right: 40px;
+  bottom: -48px;
+  transform: scale(-1.1,0.9);
+}
+
 .page-mid-content {
   position: relative;
   overflow: hidden;
@@ -124,14 +133,16 @@
   object-fit: cover;
 }
 
-.set__slider {
+.set__slider,
+.goods-on-order__slider {
   position: absolute;
   right: 23px;
   bottom: 253px;
   display: flex;
 }
 
-.set__counter {
+.set__counter,
+.goods-on-order__counter {
   margin: 5px 9px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -141,7 +152,8 @@
   color: #7981ad;
 }
 
-.set__slider-arrow--rotate180 {
+.set__slider-arrow--rotate180,
+.goods-on-order__slider-arrow--rotate180 {
   transform: rotate(180deg);
 }
 
@@ -236,7 +248,9 @@
 }
 
 .navigation__btn-left,
-.navigation__btn-right {
+.our-partners__btn-left,
+.navigation__btn-right,
+.our-partners__btn-right {
   width: 40px;
   height: 40px;
   background: #ece7f0;
@@ -288,7 +302,8 @@
   width: calc(33% - 96px);
 }
 
-.information-on-sets__title {
+.information-on-sets__title,
+.info__title {
   margin: 0;
   font-family: "Gilroy", sans-serif;
   font-style: normal;
@@ -298,7 +313,8 @@
   color: #272525;
 }
 
-.information-on-sets__text {
+.information-on-sets__text,
+.info__text {
   margin: 20px 0 0 0;
   font-family: "Gilroy", sans-serif;
   font-style: normal;
@@ -334,7 +350,8 @@
   color: #454747;
 }
 
-.creative-block__text {
+.creative-block__text,
+.contacts__text {
   max-width: 300px;
   margin: 0;
   font-family: "Gilroy", sans-serif;
@@ -345,7 +362,8 @@
   color: #222227;
 }
 
-.creative-block__text span {
+.creative-block__text span,
+.contacts__text span {
   color: #1fab8a;
 }
 
@@ -360,16 +378,19 @@
   margin-left: 88px;
 }
 
-.creative-block__input {
+.creative-block__input,
+.your-ideas__input {
   display: block;
   flex-basis: 100%;
+  max-height: 27px;
   max-inline-size: 336px;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #272525;
 }
 
-.creative-block__input::placeholder {
+.creative-block__input::placeholder,
+.your-ideas__input::placeholder {
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -378,7 +399,8 @@
   color: #454747;
 }
 
-.creative-block__order-btn {
+.creative-block__order-btn,
+.your-ideas__order-btn {
   margin-top: 4px;
   padding: 19px 105px;
   font-family: "Montswrrat", sans-serif;
@@ -399,6 +421,10 @@
 .creative-block__decorative-shadow {
   top: 55px;
   left: -190px;
+}
+
+.footer {
+  padding-top: 197px;
 }
 
 @media (max-width: 1500px) {
@@ -439,6 +465,12 @@
     top: 145px;
     right: 0px;
   }
+
+  .top-content__wave {
+    right: -190px;
+    bottom: -51px;
+    transform: scale(-0.81,1.1);
+}
 
   .mid-content__cards {
     margin: auto;
@@ -576,11 +608,22 @@
     left: -235px;
     height: 647px;
   }
+
+  .page-footer__wave {
+    top: -59px;
+    right: -180px;
+    transform: scale(-0.81,-0.8);
+  }
+
+  .footer {
+    padding-top: 124px;
+  }
 }
 
 @media (max-width: 999px) {
   .page-top-content {
     height: 497px;
+    margin-bottom: 0;
   }
 
   .top-content {
@@ -607,6 +650,12 @@
     top: -8px;
     right: 0;
   }
+
+  .top-content__wave {
+    right: -500px;
+    bottom: -58px;
+    transform: scale(-0.6,0.7);
+}
 
   .mid-content {
     padding-top: 4px;
@@ -694,6 +743,10 @@
     margin: 31px auto 0 auto;
   }
 
+  .navigation__btn {
+    padding: 0 7px;
+  }
+
   .mid-content__information-on-sets {
     display: none;
   }
@@ -704,11 +757,14 @@
   }
 
   .creative-block__title {
+    width: 299px;
+    height: 64px;
     margin: auto;
   }
 
   .creative-block__main-question {
     margin: 43px 0 0 0;
+    font-size: 48px;
     line-height: 53px;
   }
 
@@ -721,7 +777,7 @@
   }
 
   .creative-block__image {
-    right: -105px;
+    right: -122px;
     bottom: 353px;
     width: 342px;
     height: 318px;
@@ -731,6 +787,16 @@
     top: 70px;
     left: -600px;
     height: 647px;
+  }
+
+  .page-footer__wave {
+    top: -43px;
+    right: -460px;
+    transform: scale(-0.53,-0.5);
+}
+
+  .footer {
+    padding-top: 91px;
   }
 }
 
@@ -743,8 +809,13 @@
     padding: 35px 19px 0 19px;
   }
 
+  .top-content__title {
+    max-width: 410px;
+    font-size: 34px;
+}
+
   .top-content__text {
-    max-width: 256px;
+    max-width: 283px;
     margin-bottom: 31px;
   }
 
@@ -764,6 +835,12 @@
     top: 101px;
     right: 0;
   }
+
+  .top-content__wave {
+    right: -625px;
+    bottom: -63px;
+    transform: scale(-0.35,0.5);
+}
 
   .mid-content {
     padding-top: 6px;
@@ -923,6 +1000,16 @@
     left: -305px;
     height: 392px;
   }
+
+  .page-footer__wave {
+    top: -33px;
+    right: -633px;
+    transform: scale(-0.34,-0.65);
+}
+
+  .footer {
+    padding-top: 97px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -935,7 +1022,7 @@
   }
 
   .top-content__title {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 35px;
     text-align: center;
   }
@@ -948,7 +1035,7 @@
   }
 
   .top-content__write-to-the-manager {
-    margin: 345px 0 0 36px;
+    margin: 323px 0 0 36px;
   }
 
   .top-content__create-a-box {
@@ -962,6 +1049,14 @@
     z-index: -1;
   }
 
+  .top-content__wave {
+    right: -735px;
+    bottom: -55px;
+    left: auto;
+    transform: scale(-0.25,0.9);
+    z-index: -1;
+}
+
   .mid-content {
     padding-top: 26px;
   }
@@ -971,7 +1066,7 @@
   }
 
   .mid-content__cards {
-    gap: 34px;
+    gap: 20px;
   }
 
   .mid-content__set {
@@ -1067,7 +1162,7 @@
   }
 
   .navigation__btn {
-    padding: 0 7px 0 7px;
+    padding: 0 10px 0 10px;
     font-size: 16px;
   }
 
@@ -1116,13 +1211,23 @@
   }
 
   .creative-block__image {
-    right: -80px;
-    bottom: 29px;
+    right: -74px;
+    bottom: 30px;
   }
 
   .creative-block__decorative-shadow {
     top: 730px;
     left: -465px;
     height: 392px;
+  }
+
+  .page-footer__wave {
+    top: -43px;
+    right: -735px;
+    transform: scale(-0.24,-0.6);
+}
+
+  .footer {
+    padding-top: 85px;
   }
 }
