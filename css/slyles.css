@@ -182,7 +182,8 @@
   color: #272525;
 }
 
-.set__color {
+.set__color,
+.product-window__color {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -400,7 +401,8 @@
 }
 
 .creative-block__order-btn,
-.your-ideas__order-btn {
+.your-ideas__order-btn,
+.peculiarities__btn {
   margin-top: 4px;
   padding: 19px 105px;
   font-family: "Montswrrat", sans-serif;
