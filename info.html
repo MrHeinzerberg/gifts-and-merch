@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/info.css" />
   </head>
   <body>
+    <script defer src="/js/index.js"></script>
     <header class="page-header">
       <div class="top-header main-container">
         <a href="/">
@@ -28,7 +29,7 @@
           /
           <button class="lang__btn btn" type="button">Eng</button>
         </div>
-        <button class="top-header__menu-btn btn" type="button" aria-label="Открыть мобильное мкню"></button>
+        <button class="top-header__menu-btn btn" type="button" aria-label="Открыть мобильное мкню" id="open-burger-menu-btn"></button>
       </div>
       <div class="menu">
         <div class="menu__container main-container">
@@ -53,83 +54,85 @@
           </div>
         </div>
       </div>
-      <div class="burger-menu">
-        <div class="burger-menu__top">
-          <div class="burger-menu-lang">
-            <button class="burger-menu-lang__btn burger-menu-lang__btn--active btn" type="button">Ru</button>
+      <div class="burger-menu-modal" id="burger-menu">
+        <div class="burger-menu">
+          <div class="burger-menu__top">
+            <div class="burger-menu-lang">
+              <button class="burger-menu-lang__btn burger-menu-lang__btn--active btn" type="button">Ru</button>
             /
-            <button class="burger-menu-lang__btn btn" type="button">Eng</button>
+              <button class="burger-menu-lang__btn btn" type="button">Eng</button>
+            </div>
+            <button class="burger-menu__profile-btn btn" type="button">
+              <img class="burger-menu__profile-img" src="./img/profile-icon.svg" width="20" height="20" alt="profile" />
+            </button>
+            <button class="burger-menu__close-btn btn" type="button" id="burger-menu__close-btn">
+              <img src="./img/burger-menu_cancel.svg" width="20" height="20" alt="x" />
+            </button>
           </div>
-          <button class="burger-menu__profile-btn btn" type="button">
-            <img class="burger-menu__profile-img" src="./img/profile-icon.svg" width="20" height="20" alt="profile" />
-          </button>
-          <button class="burger-menu__close-btn btn" type="button">
-            <img src="./img/burger-menu_cancel.svg" width="20" height="20" alt="x" />
-          </button>
-        </div>
-        <div class="burger-menu__content">
-          <ul class="burger-menu-list">
-            <li>
-              <a class="burger-menu__link" href="/sets">Наборы</a>
-            </li>
-            <li>
-              <a class="burger-menu__link burger-menu__link--active" href="/all-goods">Все товары</a>
-            </li>
-            <li>
-              <ul class="menu__list burger-menu__goods">
-                <li>
-                  <a class="burger-menu__sublink burger-menu__sublink--active" href="/hoodies">Толстовки</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/sweatshirts">Свитшоты</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/t-shirts">Футболки</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/polo">Поло</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/vests">Жилетки</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/backpacks">Рюкзаки</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/waist-bags">Бананки</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/eco-bags_shoppers">Эко-сумки/Шопперы</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/plaid">Пледы</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/socks">Носки</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/masks">Маски</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a class="burger-menu__link" href="/information">Информация</a>
-            </li>
-          </ul>
-        </div>
-        <div class="contacts">
-          <a class="contacts__email" type="button">example@gmail.com</a>
-          <a class="top-header__number-link contacts__number-link" href="tel:+380630130103">+380 630 130 103</a>
-          <div class="contacts__networks">
-            <a href="facebook.com">
-              <img src="./img/Facebook.svg" alt="Facebook" />
-            </a>
-            <a class="contacts__instagram" href="instagram.com">
-              <img src="./img/Instagram.svg" alt="Instagram" />
-            </a>
-            <a href="linkedin.com">
-              <img src="./img/LinkedIn.svg" alt="LinkedIn" />
-            </a>
+          <div class="burger-menu__content">
+            <ul class="burger-menu-list">
+              <li>
+                <a class="burger-menu__link" href="/sets">Наборы</a>
+              </li>
+              <li>
+                <a class="burger-menu__link burger-menu__link--active" href="/all-goods">Все товары</a>
+              </li>
+              <li>
+                <ul class="menu__list burger-menu__goods">
+                  <li>
+                    <a class="burger-menu__sublink burger-menu__sublink--active" href="/hoodies">Толстовки</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/sweatshirts">Свитшоты</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/t-shirts">Футболки</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/polo">Поло</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/vests">Жилетки</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/backpacks">Рюкзаки</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/waist-bags">Бананки</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/eco-bags_shoppers">Эко-сумки/Шопперы</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/plaid">Пледы</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/socks">Носки</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/masks">Маски</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="burger-menu__link" href="/information">Информация</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <a class="contacts__email" type="button">example@gmail.com</a>
+            <a class="top-header__number-link contacts__number-link" href="tel:+380630130103">+380 630 130 103</a>
+            <div class="contacts__networks">
+              <a href="facebook.com">
+                <img src="./img/Facebook.svg" alt="Facebook" />
+              </a>
+              <a class="contacts__instagram" href="instagram.com">
+                <img src="./img/Instagram.svg" alt="Instagram" />
+              </a>
+              <a href="linkedin.com">
+                <img src="./img/LinkedIn.svg" alt="LinkedIn" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -239,8 +242,8 @@
             <h2 class="contacts__title">Контакты
             <img class="contacts__phone-img" src="./img/Cellphone.svg" />
             </h2>
-            <a class="contacts__email" type="button">example@gmail.com</a>
-            <a class="contacts__number-link" href="tel:+380630130103">+380 630 130 103</a>
+            <a class="contacts__our-email" type="button">example@gmail.com</a>
+            <a class="contacts__our-number-link" href="tel:+380630130103">+380 630 130 103</a>
             <div class="contacts__messengers">
               <a href="viber.com">
                 <img class="contacts__messengers-icon" src="./img/Viber.svg" alt="Viber" />

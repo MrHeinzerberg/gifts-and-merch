@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/slyles.css" />
   </head>
   <body>
+    <script defer src="/js/index.js"></script>
     <header class="page-header">
       <div class="top-header main-container">
         <a href="/">
@@ -27,7 +28,7 @@
           /
           <button class="lang__btn btn" type="button">Eng</button>
         </div>
-        <button class="top-header__menu-btn btn" type="button" aria-label="Открыть мобильное мкню"></button>
+        <button class="top-header__menu-btn btn" type="button" aria-label="Открыть мобильное мкню" id="open-burger-menu-btn"></button>
       </div>
       <div class="menu">
         <div class="menu__container main-container">
@@ -52,83 +53,85 @@
           </div>
         </div>
       </div>
-      <div class="burger-menu">
-        <div class="burger-menu__top">
-          <div class="burger-menu-lang">
-            <button class="burger-menu-lang__btn burger-menu-lang__btn--active btn" type="button">Ru</button>
+      <div class="burger-menu-modal" id="burger-menu">
+        <div class="burger-menu">
+          <div class="burger-menu__top">
+            <div class="burger-menu-lang">
+              <button class="burger-menu-lang__btn burger-menu-lang__btn--active btn" type="button">Ru</button>
             /
-            <button class="burger-menu-lang__btn btn" type="button">Eng</button>
+              <button class="burger-menu-lang__btn btn" type="button">Eng</button>
+            </div>
+            <button class="burger-menu__profile-btn btn" type="button">
+              <img class="burger-menu__profile-img" src="./img/profile-icon.svg" width="20" height="20" alt="profile" />
+            </button>
+            <button class="burger-menu__close-btn btn" type="button" id="burger-menu__close-btn">
+              <img src="./img/burger-menu_cancel.svg" width="20" height="20" alt="x" />
+            </button>
           </div>
-          <button class="burger-menu__profile-btn btn" type="button">
-            <img class="burger-menu__profile-img" src="./img/profile-icon.svg" width="20" height="20" alt="profile" />
-          </button>
-          <button class="burger-menu__close-btn btn" type="button">
-            <img src="./img/burger-menu_cancel.svg" width="20" height="20" alt="x" />
-          </button>
-        </div>
-        <div class="burger-menu__content">
-          <ul class="burger-menu-list">
-            <li>
-              <a class="burger-menu__link" href="/sets">Наборы</a>
-            </li>
-            <li>
-              <a class="burger-menu__link burger-menu__link--active" href="/all-goods">Все товары</a>
-            </li>
-            <li>
-              <ul class="menu__list burger-menu__goods">
-                <li>
-                  <a class="burger-menu__sublink burger-menu__sublink--active" href="/hoodies">Толстовки</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/sweatshirts">Свитшоты</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/t-shirts">Футболки</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/polo">Поло</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/vests">Жилетки</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/backpacks">Рюкзаки</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/waist-bags">Бананки</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/eco-bags_shoppers">Эко-сумки/Шопперы</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/plaid">Пледы</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/socks">Носки</a>
-                </li>
-                <li>
-                  <a class="burger-menu__sublink" href="/masks">Маски</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a class="burger-menu__link" href="/information">Информация</a>
-            </li>
-          </ul>
-        </div>
-        <div class="contacts">
-          <a class="contacts__email" type="button">example@gmail.com</a>
-          <a class="top-header__number-link contacts__number-link" href="tel:+380630130103">+380 630 130 103</a>
-          <div class="contacts__networks">
-            <a href="facebook.com">
-              <img src="./img/Facebook.svg" alt="Facebook" />
-            </a>
-            <a class="contacts__instagram" href="instagram.com">
-              <img src="./img/Instagram.svg" alt="Instagram" />
-            </a>
-            <a href="linkedin.com">
-              <img src="./img/LinkedIn.svg" alt="LinkedIn" />
-            </a>
+          <div class="burger-menu__content">
+            <ul class="burger-menu-list">
+              <li>
+                <a class="burger-menu__link" href="/sets">Наборы</a>
+              </li>
+              <li>
+                <a class="burger-menu__link burger-menu__link--active" href="/all-goods">Все товары</a>
+              </li>
+              <li>
+                <ul class="menu__list burger-menu__goods">
+                  <li>
+                    <a class="burger-menu__sublink burger-menu__sublink--active" href="/hoodies">Толстовки</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/sweatshirts">Свитшоты</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/t-shirts">Футболки</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/polo">Поло</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/vests">Жилетки</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/backpacks">Рюкзаки</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/waist-bags">Бананки</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/eco-bags_shoppers">Эко-сумки/Шопперы</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/plaid">Пледы</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/socks">Носки</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__sublink" href="/masks">Маски</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="burger-menu__link" href="/information">Информация</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <a class="contacts__email" type="button">example@gmail.com</a>
+            <a class="top-header__number-link contacts__number-link" href="tel:+380630130103">+380 630 130 103</a>
+            <div class="contacts__networks">
+              <a href="facebook.com">
+                <img src="./img/Facebook.svg" alt="Facebook" />
+              </a>
+              <a class="contacts__instagram" href="instagram.com">
+                <img src="./img/Instagram.svg" alt="Instagram" />
+              </a>
+              <a href="linkedin.com">
+                <img src="./img/LinkedIn.svg" alt="LinkedIn" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -325,6 +328,202 @@
             <source srcset="./img/Rectangle320.svg" type="image/svg" media="(max-width:450px)" />
             <img class="creative-block__decorative-shadow" src="./img/Rectangle1920.svg" alt="Decorative shadow" />
           </picture>
+        </div>
+      </div>
+    </div>
+    <div class="product-window">
+      <div class="product-window__img-block">
+        <button class="product-window__close-btn btn" type="button">
+          <img class="product-window__close-img" src="./img/burger-menu_cancel.svg" alt="x" />
+        </button>
+        <div class="product-window__main-img-block">
+          <img class="product-window__main-img" src="/img/Jacket_1.png" />
+          <button class="product-window__btn-left btn" type="button">
+            <img class="product-window__btn-img" src="./img/Arrow.svg" alt="turn left">
+          </button>
+          <button class="product-window__btn-right btn" type="button">
+            <img class="product-window__btn-img" src="./img/Arrow.svg" alt="turn right">
+          </button>
+        </div>
+        <div class="product-window__secondary-img">
+          <img class="product-window__itam" src="/img/Jacket_2.png" />
+          <img class="product-window__itam" src="/img/Jacket_3.png" />
+          <img class="product-window__itam" src="/img/Jacket_4.png" />
+        </div>
+      </div>
+      <div class="product-window__spec">
+        <div class="product-window__links-block">
+          <a class="product-window__link" href="/">Главная</a>
+          <a class="product-window__link" href="/sets.html">/ Все товары</a>
+          <a class="product-window__link product-window__link--active">/ EL003 Elleven Checkpoint-Friendly Compu-Backpack</a>
+        </div>
+        <h3 class="product-window__title">EL003 Elleven Checkpoint-Friendly Compu-Backpack</h3>
+        <button class="product-window__color product-window__color--purple btn" type="button"></button>
+        <button class="product-window__color product-window__color--green btn" type="button"></button>
+        <button class="product-window__color product-window__color--white btn" type="button"></button>
+        <div class="product-window__price-block">
+          <p class="product-window__price-text">From Price</p>
+          <span class="product-window__price">$76.43</span>
+        </div>
+        <p class="product-window__description">This exclusive design has a designated laptop-only section that unfolds to lay flat on the X-ray belt to increase your speed, convenience and security. (Pens, Laptop and other devices shown are not included)</p>
+        <div class="product-window__peculiarities peculiarities">
+          <div class="peculiarities__size">
+            <h4 class="peculiarities__title">Размер</h4>
+            <ul class="peculiarities__list">
+              <li>
+                <button class="peculiarities__size-btn peculiarities__size-btn--active btn" type="button">XS</button>
+              </li>
+              <li>
+                <button class="peculiarities__size-btn btn" type="button">S</button>
+              </li>
+              <li>
+                <button class="peculiarities__size-btn btn" type="button">M</button>
+              </li>
+              <li>
+                <button class="peculiarities__size-btn btn" type="button">L</button>
+              </li>
+              <li>
+                <button class="peculiarities__size-btn btn" type="button">XXL</button>
+              </li>
+            </ul>
+            <button class="peculiarities__btn btn">Заказать</button>
+          </div>
+          <div class="peculiarities__characteristics peculiarities__characteristics--active">
+            <h4 class="peculiarities__title">Характеристики
+              <img class="peculiarities__arrow"src="./img/arrow-down.svg" alt="arrow down" />
+            </h4>
+            <table class="peculiarities__table table">
+              <tr>
+                <td>Материал</th>
+                <td class="table__colum2">100% хлопок</th>
+              </tr>
+              <tr>
+                <td>Нанесение</th>
+                <td>вышивка, термопечать</th>
+              </tr>
+              <tr>
+                <td>Торговая марка</th>
+                <td>100% хлопок</th>
+              </tr>
+              <tr>
+                <td>Плотность, г/м</th>
+                <td>150</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="basket">
+      <button class="basket__close-btn btn" type="button">
+        <img class="basket__close-img" src="./img/burger-menu_cancel.svg" alt="x" />
+      </button>
+      <div class="basket__main-container">
+        <div class="basket__сheckout">
+          <h3 class="basket__title">Оформить заказ</h3>
+          <p class="basket__text">Введите свои контактные данные, и наш менеджер свяжется с Вами в течении 1 часа</p>
+          <form class="basket__form">
+            <input class="basket__input" type="text" placeholder="Ваше Имя" />
+            <input class="basket__input" type="email" placeholder="Ваша электронная  почта" />
+            <input class="basket__input" type="tel" placeholder="Ваш номер телефона" />
+            <button class="basket__order-btn btn" type="button">Заказать</button>
+          </form>
+          <div class="basket__agreement-cont">
+            <p class="basket__agreement">Нажимая «Заказать», вы даете согласие на обработку ваших персональных данных.</p>
+          </div>
+        </div>
+        <div class="basket__selected-products">
+          <h3 class="basket__title">Корзина</h3>
+          <ul class="basket__list">
+            <li class="basket__list-itam">
+              <img class="basket__product-img" src="./img/Green_sweatshirt.png" />
+              <h4 class="basket__product-title">EL003 Elleven Checkpoint-Friendly Compu-Backpack</h4>
+              <div class="basket__options options">
+                <div class="options__color-block">
+                  <p class="options__text-color">Цвет</p>
+                  <button class="options__color options__color--green btn" type="button"></button>
+                </div>
+                <div class="options__size-block">
+                  <p class="options__text">Размер</p>
+                  <button class="options__size-btn btn" type="button">XS</button>
+                </div>
+              </div>
+              <div class="basket__amount amount">
+                <p class="amount__text options__text">Кол-во</p>
+                <div class="amount__nav">
+                  <button class="amount__btn btn" type="button">-</button>
+                  <p class="amount__counter">5</p>
+                  <button class="amount__btn btn">+</button>
+                </div>
+                <p class="amount__min">min.</p>
+              </div>
+              <p class="basket__price">$76.43</p>
+              <button class="basket__list-close-btn btn" type="button">
+                <img class="basket__list-close-img" src="./img/burger-menu_cancel.svg" alt="x" />
+              </button>
+            </li>
+            <li class="basket__list-itam">
+              <img class="basket__product-img" src="./img/Green_sweatshirt.png" />
+              <h4 class="basket__product-title">EL003 Elleven Checkpoint-Friendly Compu-Backpack</h4>
+              <div class="basket__options options">
+                <div class="options__color-block">
+                  <p class="options__text-color">Цвет</p>
+                  <button class="options__color options__color--green btn" type="button"></button>
+                </div>
+                <div class="options__size-block">
+                  <p class="options__text">Размер</p>
+                  <button class="options__size-btn btn" type="button">XS</button>
+                </div>
+              </div>
+              <div class="basket__amount amount">
+                <p class="amount__text options__text">Кол-во</p>
+                <div class="amount__nav">
+                  <button class="amount__btn btn" type="button">-</button>
+                  <p class="amount__counter">5</p>
+                  <button class="amount__btn btn">+</button>
+                </div>
+                <p class="amount__min">min.</p>
+              </div>
+              <p class="basket__price">$76.43</p>
+              <button class="basket__list-close-btn btn" type="button">
+                <img class="basket__list-close-img" src="./img/burger-menu_cancel.svg" alt="x" />
+              </button>
+            </li>
+            <li class="basket__list-itam">
+              <img class="basket__product-img" src="./img/Green_sweatshirt.png" />
+              <h4 class="basket__product-title">EL003 Elleven Checkpoint-Friendly Compu-Backpack</h4>
+              <div class="basket__options options">
+                <div class="options__color-block">
+                  <p class="options__text-color">Цвет</p>
+                  <button class="options__color options__color--green btn" type="button"></button>
+                </div>
+                <div class="options__size-block">
+                  <p class="options__text">Размер</p>
+                  <button class="options__size-btn btn" type="button">XS</button>
+                </div>
+              </div>
+              <div class="basket__amount amount">
+                <p class="amount__text options__text">Кол-во</p>
+                <div class="amount__nav">
+                  <button class="amount__btn btn" type="button">-</button>
+                  <p class="amount__counter">5</p>
+                  <button class="amount__btn btn">+</button>
+                </div>
+                <p class="amount__min">min.</p>
+              </div>
+              <p class="basket__price">$76.43</p>
+              <button class="basket__list-close-btn btn" type="button">
+                <img class="basket__list-close-img" src="./img/burger-menu_cancel.svg" alt="x" />
+              </button>
+            </li>
+          </ul>
+          <div class="basket__order-info">
+            <p class="basket__order-number">Заказ № 110293</p>
+            <div class="basket__total-price-block">
+              <p class="basket__total-price">Всего:</p>
+              <span class="basket__total-price">$ 235.80</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
