@@ -372,7 +372,8 @@
   display: flex;
 }
 
-.creative-block__form {
+.creative-block__form,
+.basket__form {
   display: flex;
   flex-wrap: wrap;
   gap: 36px;
@@ -380,7 +381,8 @@
 }
 
 .creative-block__input,
-.your-ideas__input {
+.your-ideas__input,
+.basket__input {
   display: block;
   flex-basis: 100%;
   max-height: 27px;
@@ -388,10 +390,12 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #272525;
+  outline: none;
 }
 
 .creative-block__input::placeholder,
-.your-ideas__input::placeholder {
+.your-ideas__input::placeholder,
+.basket__input::placeholder {
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -402,7 +406,8 @@
 
 .creative-block__order-btn,
 .your-ideas__order-btn,
-.peculiarities__btn {
+.peculiarities__btn,
+.basket__order-btn {
   margin-top: 4px;
   padding: 19px 105px;
   font-family: "Montswrrat", sans-serif;
